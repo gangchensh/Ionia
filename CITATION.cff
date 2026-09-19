@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Ionia — Verified Neural-Network Code Generation in Rocq/Coq"
+authors:
+  - name: "Anonymous"
+license: MIT
+date-released: "2026-09-17"
+preferred-citation:
+  type: conference-paper
+  title: "Ionia 3.0: A Rewriting-Based Synthesis Flow from Typed Neural-Network Specifications to High-Performance GPU Code"
+  authors:
+    - name: "Anonymous"
+  year: 2026
+  conference:
+    name: "Design, Automation and Test in Europe (DATE)"
+  notes: "Artifact accompanying the DATE submission: this repository."

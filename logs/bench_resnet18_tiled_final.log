@@ -1,0 +1,72 @@
+TIME resnet18_tiled      min=2.668 ms  median=2.857 ms  max=3.218 ms  n=12
+MEMTIME_H2D              min=239.027 ms  median=243.540 ms  max=297.183 ms  n=12
+MEMTIME_D2H              min=0.074 ms  median=0.085 ms  max=0.145 ms  n=12
+raw TIME: 3.128 2.690 2.894 2.668 2.917 2.706 3.218 2.820 3.018 2.706 3.031 2.755
+KTIME breakdown (run with min TIME; sum=2.459 ms):
+  KTIME   0 ast0_relu1_out_fused                     0.0652
+  KTIME   1 ast1_pool_out                            0.0098
+  KTIME   2 ast2_l1_b1_relu1_out_fused               0.1286
+  KTIME   3 ast3_l1_b1_add_out_fused                 0.1316
+  KTIME   4 ast4_l1_b1_add_out_fused                 0.0092
+  KTIME   5 ast5_l1_b2_relu1_out_fused               0.1289
+  KTIME   6 ast6_l1_b2_add_out_fused                 0.1283
+  KTIME   7 ast7_l1_b2_add_out_fused                 0.0076
+  KTIME   8 ast8_l2_b1_shortcut_out                  0.0246
+  KTIME   9 ast9_l2_b1_shortcut_out_fused            0.0097
+  KTIME  10 ast10_l2_b1_relu1_out_fused              0.0762
+  KTIME  11 ast11_l2_b1_add_out_fused                0.1191
+  KTIME  12 ast12_l2_b1_add_out_fused                0.0088
+  KTIME  13 ast13_l2_b2_relu1_out_fused              0.1218
+  KTIME  14 ast14_l2_b2_add_out_fused                0.1180
+  KTIME  15 ast15_l2_b2_add_out_fused                0.0071
+  KTIME  16 ast16_l3_b1_shortcut_out                 0.0183
+  KTIME  17 ast17_l3_b1_shortcut_out_fused           0.0095
+  KTIME  18 ast18_l3_b1_relu1_out_fused              0.0747
+  KTIME  19 ast19_l3_b1_add_out_fused                0.0948
+  KTIME  20 ast20_l3_b1_add_out_fused                0.0071
+  KTIME  21 ast21_l3_b2_relu1_out_fused              0.0958
+  KTIME  22 ast22_l3_b2_add_out_fused                0.0889
+  KTIME  23 ast23_l3_b2_add_out_fused                0.0308
+  KTIME  24 ast24_l4_b1_shortcut_out                 0.0193
+  KTIME  25 ast25_l4_b1_shortcut_out_fused           0.0085
+  KTIME  26 ast26_l4_b1_relu1_out_fused              0.1094
+  KTIME  27 ast27_l4_b1_add_out_fused                0.2305
+  KTIME  28 ast28_l4_b1_add_out_fused                0.0081
+  KTIME  29 ast29_l4_b2_relu1_out_fused              0.2336
+  KTIME  30 ast30_l4_b2_add_out_fused                0.2370
+  KTIME  31 ast31_l4_b2_add_out_fused                0.0296
+  KTIME  32 ast32_output_fused                       0.0689
+KTIME per-kernel min across 12 runs (sum=2.337 ms):
+  KMIN    0 ast0_relu1_out_fused                     0.0627
+  KMIN    1 ast1_pool_out                            0.0076
+  KMIN    2 ast2_l1_b1_relu1_out_fused               0.1276
+  KMIN    3 ast3_l1_b1_add_out_fused                 0.1286
+  KMIN    4 ast4_l1_b1_add_out_fused                 0.0065
+  KMIN    5 ast5_l1_b2_relu1_out_fused               0.1263
+  KMIN    6 ast6_l1_b2_add_out_fused                 0.1275
+  KMIN    7 ast7_l1_b2_add_out_fused                 0.0068
+  KMIN    8 ast8_l2_b1_shortcut_out                  0.0229
+  KMIN    9 ast9_l2_b1_shortcut_out_fused            0.0081
+  KMIN   10 ast10_l2_b1_relu1_out_fused              0.0733
+  KMIN   11 ast11_l2_b1_add_out_fused                0.1188
+  KMIN   12 ast12_l2_b1_add_out_fused                0.0074
+  KMIN   13 ast13_l2_b2_relu1_out_fused              0.1169
+  KMIN   14 ast14_l2_b2_add_out_fused                0.1171
+  KMIN   15 ast15_l2_b2_add_out_fused                0.0070
+  KMIN   16 ast16_l3_b1_shortcut_out                 0.0174
+  KMIN   17 ast17_l3_b1_shortcut_out_fused           0.0071
+  KMIN   18 ast18_l3_b1_relu1_out_fused              0.0706
+  KMIN   19 ast19_l3_b1_add_out_fused                0.0864
+  KMIN   20 ast20_l3_b1_add_out_fused                0.0061
+  KMIN   21 ast21_l3_b2_relu1_out_fused              0.0917
+  KMIN   22 ast22_l3_b2_add_out_fused                0.0889
+  KMIN   23 ast23_l3_b2_add_out_fused                0.0069
+  KMIN   24 ast24_l4_b1_shortcut_out                 0.0158
+  KMIN   25 ast25_l4_b1_shortcut_out_fused           0.0067
+  KMIN   26 ast26_l4_b1_relu1_out_fused              0.1094
+  KMIN   27 ast27_l4_b1_add_out_fused                0.2286
+  KMIN   28 ast28_l4_b1_add_out_fused                0.0061
+  KMIN   29 ast29_l4_b2_relu1_out_fused              0.2265
+  KMIN   30 ast30_l4_b2_add_out_fused                0.2306
+  KMIN   31 ast31_l4_b2_add_out_fused                0.0065
+  KMIN   32 ast32_output_fused                       0.0665

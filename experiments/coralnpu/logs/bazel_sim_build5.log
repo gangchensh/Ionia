@@ -1,0 +1,35 @@
+Computing main repo mapping: 
+DEBUG: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/rules_java/java/repositories.bzl:374:10: DEPRECATED: use rules_java_dependencies() from rules_java_deps.bzl
+DEBUG: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/tflite_micro/third_party/repo.bzl:86:14: 
+Warning: skipping import of repository 'bazel_skylib' because it already exists.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (1 packages loaded, 0 targets configured)
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (1 packages loaded, 0 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (59 packages loaded, 8 targets configured)
+
+INFO: Analyzed target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (157 packages loaded, 3097 targets configured).
+[762 / 1,879] Compiling adler32.c [for tool]; 0s linux-sandbox ... (6 actions running)
+ERROR: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/zlib/BUILD.bazel:37:11: Compiling adler32.c failed: (Exit 127): clang failed: error executing CppCompile command (from target @@zlib//:zlib) $CORALNPU_DIR/shims/clang -U_FORTIFY_SOURCE -fstack-protector -Wall -Wthread-safety -Wself-assign -Wunused-but-set-parameter -Wno-free-nonheap-object -fcolor-diagnostics ... (remaining 32 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+$CORALNPU_DIR/shims/clang: line 2: /tmp/riscv-venv/bin/python: No such file or directory
+ERROR: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/zlib/BUILD.bazel:37:11: Compiling adler32.c [for tool] failed: (Exit 127): clang failed: error executing CppCompile command (from target @@zlib//:zlib) $CORALNPU_DIR/shims/clang -U_FORTIFY_SOURCE -fstack-protector -Wall -Wthread-safety -Wself-assign -Wunused-but-set-parameter -Wno-free-nonheap-object -fcolor-diagnostics ... (remaining 37 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+$CORALNPU_DIR/shims/clang: line 2: /tmp/riscv-venv/bin/python: No such file or directory
+ERROR: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/com_google_absl/absl/debugging/BUILD.bazel:357:11: Compiling absl/debugging/leak_check.cc [for tool] failed: (Exit 127): clang failed: error executing CppCompile command (from target @@com_google_absl//absl/debugging:leak_check) $CORALNPU_DIR/shims/clang -U_FORTIFY_SOURCE -fstack-protector -Wall -Wthread-safety -Wself-assign -Wunused-but-set-parameter -Wno-free-nonheap-object -fcolor-diagnostics ... (remaining 78 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+$CORALNPU_DIR/shims/clang: line 2: /tmp/riscv-venv/bin/python: No such file or directory
+ERROR: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/com_google_absl/absl/time/internal/cctz/BUILD.bazel:40:11: Compiling absl/time/internal/cctz/src/time_zone_fixed.cc [for tool] failed: (Exit 127): clang failed: error executing CppCompile command (from target @@com_google_absl//absl/time/internal/cctz:time_zone) $CORALNPU_DIR/shims/clang -U_FORTIFY_SOURCE -fstack-protector -Wall -Wthread-safety -Wself-assign -Wunused-but-set-parameter -Wno-free-nonheap-object -fcolor-diagnostics ... (remaining 78 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+$CORALNPU_DIR/shims/clang: line 2: /tmp/riscv-venv/bin/python: No such file or directory
+Target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 3.313s, Critical Path: 0.08s
+INFO: 440 processes: 328 action cache hit, 440 internal.
+ERROR: Build did NOT complete successfully
+exit=1

@@ -1,0 +1,50 @@
+TIME vgg16p_tiled        min=6.357 ms  median=6.673 ms  max=7.688 ms  n=12
+MEMTIME_H2D              min=1630.631 ms  median=1707.799 ms  max=1852.451 ms  n=12
+MEMTIME_D2H              min=0.075 ms  median=0.094 ms  max=0.135 ms  n=12
+raw TIME: 6.357 6.376 6.413 6.357 7.688 6.979 7.201 7.009 6.519 7.335 6.414 6.826
+KTIME breakdown (run with min TIME; sum=6.267 ms):
+  KTIME   0 ast_relu1_1_out_fused                    0.0410
+  KTIME   1 ast_relu1_2_out_fused                    0.3532
+  KTIME   2 ast_pool1_out                            0.0152
+  KTIME   3 ast_relu2_1_out_fused                    0.2987
+  KTIME   4 ast_relu2_2_out_fused                    0.5724
+  KTIME   5 ast_pool2_out                            0.0091
+  KTIME   6 ast_relu3_1_out_fused                    0.3198
+  KTIME   7 ast_relu3_2_out_fused                    0.6175
+  KTIME   8 ast_relu3_3_out_fused                    0.6154
+  KTIME   9 ast_pool3_out                            0.0109
+  KTIME  10 ast_relu4_1_out_fused                    0.3161
+  KTIME  11 ast_relu4_2_out_fused                    0.6126
+  KTIME  12 ast_relu4_3_out_fused                    0.6291
+  KTIME  13 ast_pool4_out                            0.0086
+  KTIME  14 ast_relu5_1_out_fused                    0.2949
+  KTIME  15 ast_relu5_2_out_fused                    0.2969
+  KTIME  16 ast_relu5_3_out_fused                    0.2940
+  KTIME  17 ast_pool5_out                            0.0078
+  KTIME  18 ast_flatten_out                          0.0193
+  KTIME  19 ast_fc1_relu_out_fused                   0.7626
+  KTIME  20 ast_fc2_relu_out_fused                   0.1326
+  KTIME  21 ast_output                               0.0393
+KTIME per-kernel min across 12 runs (sum=6.155 ms):
+  KMIN    0 ast_relu1_1_out_fused                    0.0362
+  KMIN    1 ast_relu1_2_out_fused                    0.3532
+  KMIN    2 ast_pool1_out                            0.0110
+  KMIN    3 ast_relu2_1_out_fused                    0.2901
+  KMIN    4 ast_relu2_2_out_fused                    0.5639
+  KMIN    5 ast_pool2_out                            0.0090
+  KMIN    6 ast_relu3_1_out_fused                    0.3164
+  KMIN    7 ast_relu3_2_out_fused                    0.6135
+  KMIN    8 ast_relu3_3_out_fused                    0.6154
+  KMIN    9 ast_pool3_out                            0.0081
+  KMIN   10 ast_relu4_1_out_fused                    0.3150
+  KMIN   11 ast_relu4_2_out_fused                    0.6049
+  KMIN   12 ast_relu4_3_out_fused                    0.6002
+  KMIN   13 ast_pool4_out                            0.0067
+  KMIN   14 ast_relu5_1_out_fused                    0.2923
+  KMIN   15 ast_relu5_2_out_fused                    0.2913
+  KMIN   16 ast_relu5_3_out_fused                    0.2901
+  KMIN   17 ast_pool5_out                            0.0071
+  KMIN   18 ast_flatten_out                          0.0082
+  KMIN   19 ast_fc1_relu_out_fused                   0.7522
+  KMIN   20 ast_fc2_relu_out_fused                   0.1324
+  KMIN   21 ast_output                               0.0375

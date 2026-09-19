@@ -1,0 +1,12 @@
+Triton output (first 10):  [-9.2846472e-03  1.0483684e-03 -1.6672416e-02  1.4882493e-03
+ -5.3884927e-05  3.0530496e-03 -1.2429634e-03  7.9846438e-03
+  6.5579191e-03 -1.4961045e-03]
+Ref output (first 10):     [-9.2846463e-03  1.0483693e-03 -1.6672418e-02  1.4882499e-03
+ -5.3885102e-05  3.0530510e-03 -1.2429670e-03  7.9846419e-03
+  6.5579200e-03 -1.4961064e-03]
+max abs error: 1.024e-08
+max rel error: 2.827e-04
+Match atol=rtol=1e-4: True   atol=rtol=1e-5: True
+max |torch eager - ref| = 8.345e-07
+Triton kernel chain:  min    2974.8 us   median    3088.5 us  (n=50)
+PyTorch eager (GPU):  min    1266.2 us   median    1701.1 us  (n=50)

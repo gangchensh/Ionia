@@ -1,0 +1,9 @@
+Triton output: [0.0997893  0.10000254 0.09982364 0.10011248 0.10015773 0.0999798
+ 0.10023294 0.10001699 0.09994308 0.09994157]
+Ref output:    [0.09978928 0.10000253 0.09982363 0.10011248 0.10015771 0.09997978
+ 0.10023294 0.10001698 0.09994307 0.09994157]
+max |triton - ref| = 2.235e-08
+Match (atol=rtol=1e-5): True
+max |torch eager - ref| = 1.490e-08
+Triton kernel chain:  min     39.7 us   median    118.6 us  (n=50)
+PyTorch eager (GPU):  min     80.7 us   median    126.0 us  (n=50)

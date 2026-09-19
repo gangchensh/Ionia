@@ -1,0 +1,19 @@
+Reference output (first 10): [-9.2846472e-03  1.0483684e-03 -1.6672418e-02  1.4882489e-03
+ -5.3884462e-05  3.0530496e-03 -1.2429609e-03  7.9846438e-03
+  6.5579200e-03 -1.4961050e-03]
+Sequential C out (first 10): [-9.2846472e-03  1.0483693e-03 -1.6672418e-02  1.4882480e-03
+ -5.3885160e-05  3.0530496e-03 -1.2429630e-03  7.9846419e-03
+  6.5579200e-03 -1.4961059e-03]
+OpenMP C out (first 10):     [-9.2846472e-03  1.0483693e-03 -1.6672418e-02  1.4882480e-03
+ -5.3885160e-05  3.0530496e-03 -1.2429630e-03  7.9846419e-03
+  6.5579200e-03 -1.4961059e-03]
+Max |seq - numpy_ref| = 3.725e-09
+Max |par - numpy_ref| = 3.725e-09
+Max |par - seq|       = 0.000e+00
+Match (seq,  numpy, 1e-4): True
+Match (par,  numpy, 1e-4): True
+Match (par == seq, exact): True
+Sequential:           1170.806 ms/inference
+OpenMP (2 threads):    623.773 ms/inference  (speedup 1.88x)
+OpenMP (4 threads):    305.019 ms/inference  (speedup 3.84x)
+OpenMP (8 threads):    276.778 ms/inference  (speedup 4.23x)

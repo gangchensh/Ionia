@@ -1,0 +1,24 @@
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (0 packages loaded, 0 targets configured)
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (0 packages loaded, 0 targets configured)
+
+INFO: Analyzed target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (0 packages loaded, 0 targets configured).
+ERROR: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/com_google_absl/absl/base/BUILD.bazel:60:11: Compiling absl/base/log_severity.cc [for tool] failed: (Exit 1): clang failed: error executing CppCompile command (from target @@com_google_absl//absl/base:log_severity) $CORALNPU_DIR/shims/clang -U_FORTIFY_SOURCE -fstack-protector -Wall -Wthread-safety -Wself-assign -Wunused-but-set-parameter -Wno-free-nonheap-object -fcolor-diagnostics ... (remaining 78 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+In file included from external/com_google_absl/absl/base/log_severity.cc:15:
+external/com_google_absl/absl/base/log_severity.h:18:10: fatal error: 'array' file not found
+   18 | #include <array>
+      |          ^~~~~~~
+1 error generated.
+Target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+ERROR: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/coralnpu_mpact/sim/BUILD:426:22 Compiling external/coralnpu_mpact/sim/coralnpu_m3_bin_encoder.cc failed: (Exit 1): clang failed: error executing CppCompile command (from target @@com_google_absl//absl/base:log_severity) $CORALNPU_DIR/shims/clang -U_FORTIFY_SOURCE -fstack-protector -Wall -Wthread-safety -Wself-assign -Wunused-but-set-parameter -Wno-free-nonheap-object -fcolor-diagnostics ... (remaining 78 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+INFO: Elapsed time: 0.372s, Critical Path: 0.08s
+INFO: 7 processes: 7 internal.
+ERROR: Build did NOT complete successfully
+exit=1

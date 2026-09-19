@@ -1,0 +1,4 @@
+BM64_BN112_BK32_t128_s2: min 33.8 us, med 37.1 us, 6.84 TFLOP/s, max_err 5.98e-03
+BM32_BN112_BK32_t128_s2: min 30.3 us, med 34.1 us, 7.64 TFLOP/s, max_err 5.98e-03
+BM64_BN112_BK32_t256_s2: min 39.3 us, med 43.1 us, 5.88 TFLOP/s, max_err 5.98e-03
+BM128_BN112_BK32_t256_s2: min 48.2 us, med 51.4 us, 4.80 TFLOP/s, max_err 5.98e-03

@@ -1,0 +1,65 @@
+USDT:2026-08-27 22:26:40 304555:304555 SyncActivityProfilerHandler.cpp:52] profiler_start
+USDT:2026-08-27 22:26:40 304555:304555 SyncActivityProfilerHandler.cpp:59] profiler_stop
+# device: NVIDIA RTX PRO 4000 Blackwell Generation Laptop GPU
+# torch 2.13.0+cu130, cudnn 92000
+# batch=1, 224x224, FP32, eval, random weights (seed=20260827)
+# warmup=20, reps=50, CUDA events
+
+## resnet18 eager:
+  gpu_only  min=1.191 ms  median=1.411 ms  p90=1.969  max=3.388
+  e2e(h2d+d2h) min=1.315 ms  median=1.565 ms
+  compiled gpu_only  min=1.090 ms  median=1.275 ms
+  compiled e2e       min=1.257 ms  median=1.524 ms
+
+## resnet18 per-layer breakdown (self GPU time / iter, eager): total=0.709 ms
+  conv  : 0.622 ms  (87.7%)
+  bn    : 0.043 ms  (6.1%)
+  relu  : 0.019 ms  (2.7%)
+  add   : 0.017 ms  (2.4%)
+  pool  : 0.006 ms  (0.9%)
+  other : 0.002 ms  (0.3%)
+  fc    : 0.000 ms  (0.0%)
+
+### top-15 aten ops (by self CUDA time):
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                aten::cudnn_convolution        18.95%      13.512ms        45.93%      32.756ms      32.756us      31.089ms        87.68%      31.118ms      31.118us          1000  
+void cudnn::engines_precompiled::nchwToNhwcKernel<fl...         0.00%       0.000us         0.00%       0.000us       0.000us       9.102ms        25.67%       9.102ms       5.689us          1600  
+void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s168...         0.00%       0.000us         0.00%       0.000us       0.000us       6.382ms        18.00%       6.382ms      25.527us           250  
+void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s168...         0.00%       0.000us         0.00%       0.000us       0.000us       5.065ms        14.28%       5.065ms      14.471us           350  
+void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s168...         0.00%       0.000us         0.00%       0.000us       0.000us       4.666ms        13.16%       4.666ms      31.106us           150  
+                                 aten::cudnn_batch_norm         8.44%       6.019ms        26.01%      18.551ms      18.551us       2.159ms         6.09%       2.159ms       2.159us          1000  
+void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float,...         0.00%       0.000us         0.00%       0.000us       0.000us       2.159ms         6.09%       2.159ms       2.159us          1000  
+void implicit_convolve_sgemm<float, float, 1024, 5, ...         0.00%       0.000us         0.00%       0.000us       0.000us       1.816ms         5.12%       1.816ms      12.110us           150  
+sm80_xmma_fprop_implicit_gemm_tf32f32_tf32f32_f32_nh...         0.00%       0.000us         0.00%       0.000us       0.000us       1.575ms         4.44%       1.575ms      31.509us            50  
+void implicit_convolve_sgemm<float, float, 128, 5, 5...         0.00%       0.000us         0.00%       0.000us       0.000us       1.484ms         4.18%       1.484ms      29.671us            50  
+void cudnn::engines_precompiled::nhwcToNchwKernel<fl...         0.00%       0.000us         0.00%       0.000us       0.000us     999.631us         2.82%     999.631us       1.333us           750  
+                                       aten::clamp_min_         2.85%       2.032ms         9.62%       6.860ms       8.071us     947.611us         2.67%     947.611us       1.115us           850  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us     947.611us         2.67%     947.611us       1.115us           850  
+                                             aten::add_         1.65%       1.175ms         4.56%       3.249ms       8.124us     436.556us         1.23%     436.556us       1.091us           400  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us     436.556us         1.23%     436.556us       1.091us           400  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 71.317ms
+Self CUDA time total: 35.458ms
+
+
+## vgg16 eager:
+  gpu_only  min=2.345 ms  median=2.536 ms  p90=3.290  max=3.422
+  e2e(h2d+d2h) min=2.531 ms  median=2.676 ms
+  compiled gpu_only  min=2.214 ms  median=2.438 ms
+  compiled e2e       min=2.600 ms  median=2.740 ms
+
+## efficientnet_b0 eager:
+  gpu_only  min=3.786 ms  median=4.129 ms  p90=5.057  max=12.176
+  e2e(h2d+d2h) min=4.014 ms  median=4.469 ms
+  compiled gpu_only  min=2.124 ms  median=2.361 ms
+  compiled e2e       min=2.522 ms  median=3.014 ms
+
+## mobilenet_v2 eager:
+  gpu_only  min=1.774 ms  median=2.498 ms  p90=4.292  max=4.885
+  e2e(h2d+d2h) min=2.591 ms  median=2.771 ms
+  compiled gpu_only  min=1.015 ms  median=1.480 ms
+  compiled e2e       min=1.782 ms  median=2.203 ms
+
+# results saved to experiments/ast_codegen/bench_torch_baseline_results.json

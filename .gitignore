@@ -1,0 +1,40 @@
+# Rocq/Coq build artifacts
+*.vo
+*.vok
+*.vos
+*.glob
+*.aux
+*.cache
+.lia.cache
+.nia.cache
+.nra.cache
+Makefile.coq
+Makefile.coq.conf
+.Makefile.coq.d
+
+# OCaml build artifacts
+*.cmi
+*.cmo
+*.cmx
+*.o
+_build/
+
+# Python
+__pycache__/
+*.pyc
+
+# Generated code / benchmark outputs
+*.bin
+scripts/print_assumptions_output.txt
+
+# Benchmark/validation logs under this artifact are evidence and must be
+# tracked (negates any `*.log` rule inherited from an enclosing repository)
+!*.log
+
+# Coq extraction side outputs (the build dumps these in the repo root)
+/*.ml
+/*.mli
+
+# Editors / OS
+*~
+.DS_Store

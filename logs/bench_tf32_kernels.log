@@ -1,0 +1,12 @@
+USDT:2026-08-28 11:15:17 483217:483217 SyncActivityProfilerHandler.cpp:52] profiler_start
+USDT:2026-08-28 11:15:17 483217:483217 SyncActivityProfilerHandler.cpp:59] profiler_stop
+USDT:2026-08-28 11:15:17 483217:483217 SyncActivityProfilerHandler.cpp:52] profiler_start
+USDT:2026-08-28 11:15:17 483217:483217 SyncActivityProfilerHandler.cpp:59] profiler_stop
+--- conv 128->128@28^2 k3 tf32=True kernels ---
+  void cudnn::engines_precompiled::nchwToNhwcKernel<float, float, float, false, true, (cudnnKernelDataType_t)2>(  cnt=40 self_gpu=4.1us/iter
+  void cutlass__5x_cudnn::Kernel<cutlass_tensorop_s1688fprop_optimized_tf32_128x64_16x6_nhwc_align4>(cutlass_ten  cnt=20 self_gpu=16.6us/iter
+  void cudnn::engines_precompiled::nhwcToNchwKernel<float, float, float, true, false, (cudnnKernelDataType_t)0>(  cnt=20 self_gpu=1.2us/iter
+--- conv 128->128@28^2 k3 tf32=False kernels ---
+  void implicit_convolve_sgemm<float, float, 128, 5, 5, 3, 3, 3, 1, false, false, true>(int, int, int, float con  cnt=20 self_gpu=55.5us/iter
+matmul 4096^3 tf32=True: 3.268 ms  42.05 TFLOP/s
+matmul 4096^3 tf32=False: 9.981 ms  13.77 TFLOP/s

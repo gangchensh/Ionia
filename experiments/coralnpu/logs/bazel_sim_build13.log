@@ -1,0 +1,95 @@
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+WARNING: Build option --copt has changed, discarding analysis cache (this can be expensive, see https://bazel.build/advanced/performance/iteration-speed).
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (0 packages loaded, 0 targets configured)
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (0 packages loaded, 0 targets configured)
+
+INFO: Analyzed target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (0 packages loaded, 3068 targets configured).
+[1,023 / 1,185] Compiling pybind11_abseil/utils_pybind11_absl.cc; 0s linux-sandbox ... (6 actions, 5 running)
+[1,036 / 1,213] Compiling pybind11_abseil/utils_pybind11_absl.cc; 1s linux-sandbox ... (6 actions, 5 running)
+[1,051 / 1,217] Compiling pybind11_abseil/register_status_bindings.cc; 2s linux-sandbox ... (6 actions, 5 running)
+[1,060 / 1,234] Compiling pybind11_abseil/register_status_bindings.cc; 3s linux-sandbox ... (6 actions, 5 running)
+[1,067 / 1,236] Compiling pybind11_abseil/register_status_bindings.cc; 4s linux-sandbox ... (6 actions, 5 running)
+[1,074 / 1,236] Compiling riscv/riscv_d_instructions.cc; 3s linux-sandbox ... (6 actions, 5 running)
+[1,081 / 1,236] Compiling riscv/riscv_action_point_memory_interface.cc; 2s linux-sandbox ... (6 actions, 5 running)
+[1,093 / 1,248] Compiling riscv/riscv_f_instructions.cc; 1s linux-sandbox ... (6 actions, 5 running)
+ERROR: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/com_google_mpact-riscv/riscv/BUILD:111:11: Compiling riscv/riscv_fp_host_x86.cc failed: (Exit 1): gcc failed: error executing CppCompile command (from target @@com_google_mpact-riscv//riscv:riscv_fp_state) /usr/bin/gcc -U_FORTIFY_SOURCE -fstack-protector -Wall -Wunused-but-set-parameter -Wno-free-nonheap-object -fno-omit-frame-pointer '-std=c++17' -MD -MF ... (remaining 66 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+external/com_google_mpact-riscv/riscv/riscv_fp_host_x86.cc:205: warning: ignoring '#pragma STDC FENV_ACCESS' [-Wunknown-pragmas]
+  205 | #pragma STDC FENV_ACCESS ON
+      | 
+external/com_google_mpact-riscv/riscv/riscv_fp_host_x86.cc:352: warning: ignoring '#pragma STDC FENV_ACCESS' [-Wunknown-pragmas]
+  352 | #pragma STDC FENV_ACCESS OFF
+      | 
+In file included from external/com_google_mpact-riscv/riscv/riscv_fp_host_x86.cc:17:
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<float>::IsInf(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:192:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  192 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<float>::IsNaN(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:196:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  196 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<float>::IsSNaN(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:200:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  200 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<float>::IsQNaN(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:204:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  204 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<float>::SignBit(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:208:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  208 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<double>::IsInf(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:230:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  230 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<double>::IsNaN(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:234:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  234 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<double>::IsSNaN(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:238:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  238 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<double>::IsQNaN(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:242:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  242 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<double>::SignBit(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:246:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  246 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In function 'float mpact::sim::generic::ConvertHalfToSingle(HalfFP)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:429:13: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  429 |     return *reinterpret_cast<float*>(&float_uint);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:434:13: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  434 |     return *reinterpret_cast<float*>(&float_uint);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:440:13: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  440 |     return *reinterpret_cast<float*>(&float_uint);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:445:13: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  445 |     return *reinterpret_cast<float*>(&float_uint);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:450:13: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  450 |     return *reinterpret_cast<float*>(&float_uint);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:470:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  470 |   return *reinterpret_cast<float*>(&float_uint);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-riscv/riscv/riscv_fp_host_x86.cc: In constructor 'mpact::sim::riscv::ScopedFPStatus::ScopedFPStatus(mpact::sim::riscv::HostFloatingPointInterface*)':
+external/com_google_mpact-riscv/riscv/riscv_fp_host_x86.cc:211:3: error: inconsistent operand constraints in an 'asm'
+  211 |   asm volatile("stmxcsr %0\n"  // NOLINT(google3-runtime-inline-assembly)
+      |   ^~~
+Target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 9.631s, Critical Path: 5.68s
+INFO: 71 processes: 1035 action cache hit, 7 internal, 64 linux-sandbox.
+ERROR: Build did NOT complete successfully
+exit=1

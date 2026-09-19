@@ -1,0 +1,21 @@
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (0 packages loaded, 0 targets configured)
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (0 packages loaded, 0 targets configured)
+
+INFO: Analyzed target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (0 packages loaded, 0 targets configured).
+ERROR: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/com_google_absl/absl/log/internal/BUILD.bazel:255:11: Compiling absl/log/internal/nullguard.cc failed: (Exit 1): clang failed: error executing CppCompile command (from target @@com_google_absl//absl/log/internal:nullguard) $CORALNPU_DIR/shims/clang -U_FORTIFY_SOURCE -fstack-protector -Wall -Wthread-safety -Wself-assign -Wunused-but-set-parameter -Wno-free-nonheap-object -fcolor-diagnostics ... (remaining 72 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+error: unable to resolve zig cache directory: AppDataDirUnavailable
+ERROR: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/com_google_absl/absl/numeric/BUILD.bazel:78:11: Compiling absl/numeric/int128.cc failed: (Exit 1): clang failed: error executing CppCompile command (from target @@com_google_absl//absl/numeric:int128) $CORALNPU_DIR/shims/clang -U_FORTIFY_SOURCE -fstack-protector -Wall -Wthread-safety -Wself-assign -Wunused-but-set-parameter -Wno-free-nonheap-object -fcolor-diagnostics ... (remaining 74 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+error: unable to resolve zig cache directory: AppDataDirUnavailable
+Target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 0.184s, Critical Path: 0.04s
+INFO: 7 processes: 7 internal.
+ERROR: Build did NOT complete successfully
+exit=1

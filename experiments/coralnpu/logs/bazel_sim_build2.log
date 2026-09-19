@@ -1,0 +1,32 @@
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (0 packages loaded, 0 targets configured)
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (0 packages loaded, 0 targets configured)
+
+INFO: Repository local_config_cc instantiated at:
+  $CORALNPU_DIR/coralnpu_ws/WORKSPACE:89:20: in <toplevel>
+  ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/rules_cc/cc/repositories.bzl:10:17: in rules_cc_toolchains
+  ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/rules_cc/cc/private/toolchain/cc_configure.bzl:159:16: in cc_configure
+Repository rule cc_autoconf defined at:
+  ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/rules_cc/cc/private/toolchain/cc_configure.bzl:115:30: in <toplevel>
+ERROR: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/rules_cc/cc/private/toolchain/lib_cc_configure.bzl:112:9: An error occurred during the fetch of repository 'local_config_cc':
+   Traceback (most recent call last):
+	File "~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/rules_cc/cc/private/toolchain/cc_configure.bzl", line 97, column 33, in cc_autoconf_impl
+		configure_unix_toolchain(repository_ctx, cpu_value, overriden_tools)
+	File "~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/rules_cc/cc/private/toolchain/unix_cc_configure.bzl", line 359, column 23, in configure_unix_toolchain
+		cc = _find_generic(repository_ctx, "gcc", "CC", overridden_tools)
+	File "~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/rules_cc/cc/private/toolchain/unix_cc_configure.bzl", line 322, column 32, in _find_generic
+		auto_configure_fail(msg)
+	File "~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/rules_cc/cc/private/toolchain/lib_cc_configure.bzl", line 112, column 9, in auto_configure_fail
+		fail("\n%sAuto-Configuration Error:%s %s\n" % (red, no_color, msg))
+Error in fail: 
+Auto-Configuration Error: Cannot find gcc or CC (clang); either correct your path or set the CC environment variable
+ERROR: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/rules_cc/cc/compiler/BUILD:50:14: While resolving toolchains for target @@rules_cc//cc/compiler:compiler (4a7dfb7): invalid registered toolchain '//toolchain/host_clang:host_clang_toolchain_def': no such package '@@local_config_cc//': 
+Auto-Configuration Error: Cannot find gcc or CC (clang); either correct your path or set the CC environment variable
+ERROR: $CORALNPU_DIR/coralnpu_ws/sw/coralnpu_sim/BUILD:21:17: errors encountered resolving select() keys for //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so
+ERROR: Analysis of target '//sw/coralnpu_sim:coralnpu_v2_sim_pybind.so' failed; build aborted
+INFO: Elapsed time: 0.115s, Critical Path: 0.02s
+INFO: 1 process: 1 internal.
+ERROR: Build did NOT complete successfully
+FAILED: 

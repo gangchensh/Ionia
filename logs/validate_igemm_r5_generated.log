@@ -1,0 +1,75 @@
+Wrapped CUDA test written to resnet18_igemm.cu
+resnet18_igemm.cu(2355): warning #1650-D: result of call is not used
+      fread(&h_bn_eps, sizeof(float), 1, f);
+      ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+resnet18_igemm.cu(2355): warning #1650-D: result of call is not used
+      fread(&h_bn_eps, sizeof(float), 1, f);
+      ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+resnet18_igemm.cu: In function ‘int main(int, char**)’:
+resnet18_igemm.cu:2355:6: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 2355 |     fread(&h_bn_eps, sizeof(float), 1, f);
+      |     ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MEMTIME_H2D resnet18_igemm 254.644669
+TIME resnet18_igemm 0.744672
+TIMEMED resnet18_igemm 0.769664
+TIME_GRAPH resnet18_igemm 0.693632
+TIMEGRAPH_MED resnet18_igemm 0.706048
+KMIN 0 ast0_relu1_out_fused 0.066656
+KMIN 1 ast1_pool_out 0.007328
+KMIN 2 ig_transpose 0.010304
+KMIN 3 l1_b1_c1 0.030816
+KMIN 4 l1_b1_r1 0.011040
+KMIN 5 l1_b1_c2 0.031712
+KMIN 6 l1_b1_r2 0.015072
+KMIN 7 l1_b2_c1 0.032096
+KMIN 8 l1_b2_r1 0.010752
+KMIN 9 l1_b2_c2 0.031104
+KMIN 10 l1_b2_r2 0.015296
+KMIN 11 l2_b1_c1 0.023520
+KMIN 12 l2_b1_r1 0.008704
+KMIN 13 l2_b1_sc 0.009728
+KMIN 14 l2_b1_rsc 0.008768
+KMIN 15 l2_b1_c2 0.031104
+KMIN 16 l2_b1_r2 0.011040
+KMIN 17 l2_b2_c1 0.029088
+KMIN 18 l2_b2_r1 0.009024
+KMIN 19 l2_b2_c2 0.029152
+KMIN 20 l2_b2_r2 0.010944
+KMIN 21 l3_b1_c1 0.024800
+KMIN 22 l3_b1_r1 0.008000
+KMIN 23 l3_b1_sc 0.011168
+KMIN 24 l3_b1_rsc 0.007040
+KMIN 25 l3_b1_c2 0.031936
+KMIN 26 l3_b1_r2 0.007840
+KMIN 27 l3_b2_c1 0.030432
+KMIN 28 l3_b2_r1 0.007200
+KMIN 29 l3_b2_c2 0.030496
+KMIN 30 l3_b2_r2 0.007744
+KMIN 31 l4_b1_c1 0.021056
+KMIN 32 l4_b1_r1 0.006688
+KMIN 33 l4_b1_sc 0.010656
+KMIN 34 l4_b1_rsc 0.005824
+KMIN 35 l4_b1_c2 0.028608
+KMIN 36 l4_b1_r2 0.007232
+KMIN 37 l4_b2_c1 0.028416
+KMIN 38 l4_b2_r1 0.007008
+KMIN 39 l4_b2_c2 0.028704
+KMIN 40 l4_b2_r2 0.007136
+KMIN 41 ig_gap 0.006976
+KMIN 42 ig_fc 0.007520
+MEMTIME_D2H resnet18_igemm 0.100096
+NumPy FP64 reference (first 10): [-9.28464586e-03  1.04836951e-03 -1.66724182e-02  1.48824934e-03
+ -5.38851456e-05  3.05304975e-03 -1.24296654e-03  7.98464319e-03
+  6.55792016e-03 -1.49610592e-03]
+CUDA output (first 10):          [-9.2846453e-03  1.0483696e-03 -1.6672418e-02  1.4882488e-03
+ -5.3885800e-05  3.0530500e-03 -1.2429674e-03  7.9846419e-03
+  6.5579200e-03 -1.4961055e-03]
+max abs error: 2.587e-09
+max rel error: 2.194e-05
+resnet18_igemm: PASSED (atol=1e-5 vs FP64 reference)

@@ -1,0 +1,6 @@
+relu1d 1024 32 in:x:1024 out:out:1024
+add1d 1024 32 in:x:1024 in:y:1024 out:out:1024
+sum256 32 32 in:x:256 out:out:1
+sum4096 512 32 in:x:4096 out:out:16
+max256 32 32 in:x:256 out:out:1
+conv2d 256 32 in:x:128 in:w:72 in:b:4 out:out:256

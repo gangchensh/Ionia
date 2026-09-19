@@ -1,0 +1,4 @@
+max abs err vs numpy ref: 1.4901161e-08
+TileLang LeNet-5 chain: min 102.1 us, median 151.7 us
+max abs err vs numpy ref: 1.4901161e-08
+TileLang LeNet-5 chain: min 91.6 us, median 131.2 us

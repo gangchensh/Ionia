@@ -1,0 +1,33 @@
+Computing main repo mapping: 
+DEBUG: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/rules_java/java/repositories.bzl:374:10: DEPRECATED: use rules_java_dependencies() from rules_java_deps.bzl
+DEBUG: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/tflite_micro/third_party/repo.bzl:86:14: 
+Warning: skipping import of repository 'bazel_skylib' because it already exists.
+Loading: 
+Loading: 0 packages loaded
+WARNING: Build option --features has changed, discarding analysis cache (this can be expensive, see https://bazel.build/advanced/performance/iteration-speed).
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (1 packages loaded, 0 targets configured)
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (1 packages loaded, 0 targets configured)
+
+INFO: Analyzed target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (157 packages loaded, 3096 targets configured).
+[444 / 1,446] Compiling absl/numeric/int128.cc [for tool]; 0s linux-sandbox ... (6 actions, 5 running)
+[1,073 / 1,446] Compiling pybind11_abseil/import_status_module.cc; 1s linux-sandbox ... (6 actions, 5 running)
+[1,338 / 1,446] Compiling mpact/sim/decoder/bin_format_gen_main.cc [for tool]; 0s linux-sandbox ... (3 actions, 2 running)
+[1,359 / 1,446] Compiling riscv/riscv_bitmanip_instructions.cc; 1s linux-sandbox ... (6 actions running)
+[1,366 / 1,446] Compiling mpact/sim/util/memory/single_initiator_router.cc; 1s linux-sandbox ... (6 actions running)
+[1,370 / 1,446] Compiling mpact/sim/util/memory/memory_use_profiler.cc; 1s linux-sandbox ... (6 actions, 5 running)
+[1,376 / 1,446] Compiling mpact/sim/util/memory/flat_demand_memory.cc; 1s linux-sandbox ... (6 actions, 5 running)
+[1,380 / 1,446] Compiling riscv/debug_command_shell.cc; 2s linux-sandbox ... (6 actions, 5 running)
+[1,385 / 1,446] Compiling riscv/debug_command_shell.cc; 3s linux-sandbox ... (6 actions, 5 running)
+ERROR: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/coralnpu_mpact/sim/BUILD:409:18: Compiling external/coralnpu_mpact/sim/coralnpu_m3_decoder.cc failed: (Exit 1): gcc failed: error executing CppCompile command (from target @@coralnpu_mpact//sim:coralnpu_m3_isa) /usr/bin/gcc -U_FORTIFY_SOURCE -fstack-protector -Wall -Wunused-but-set-parameter -Wno-free-nonheap-object -fno-omit-frame-pointer '-std=c++17' -MD -MF ... (remaining 79 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+bazel-out/k8-fastbuild/bin/external/coralnpu_mpact/sim/coralnpu_m3_decoder.cc:8:10: fatal error: external/com_google_mpact-riscv/riscv/riscv_bitmanip_instructions.h: No such file or directory
+    8 | #include "external/com_google_mpact-riscv/riscv/riscv_bitmanip_instructions.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+Target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 11.557s, Critical Path: 4.05s
+INFO: 63 processes: 1333 action cache hit, 7 internal, 56 linux-sandbox.
+ERROR: Build did NOT complete successfully
+exit=1

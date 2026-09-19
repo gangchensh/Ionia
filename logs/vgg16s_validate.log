@@ -1,0 +1,416 @@
+test_vgg16s_seq.c: In function ‘read_params’:
+test_vgg16s_seq.c:79:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   79 |   fread(input, sizeof(float), 3072, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:80:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   80 |   fread(conv1_1_w, sizeof(float), 1728, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:81:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   81 |   fread(conv1_1_b, sizeof(float), 64, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:82:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   82 |   fread(conv1_2_w, sizeof(float), 36864, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:83:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   83 |   fread(conv1_2_b, sizeof(float), 64, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:84:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   84 |   fread(conv2_1_w, sizeof(float), 73728, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:85:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   85 |   fread(conv2_1_b, sizeof(float), 128, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:86:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   86 |   fread(conv2_2_w, sizeof(float), 147456, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:87:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   87 |   fread(conv2_2_b, sizeof(float), 128, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:88:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   88 |   fread(conv3_1_w, sizeof(float), 294912, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:89:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   89 |   fread(conv3_1_b, sizeof(float), 256, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:90:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   90 |   fread(conv3_2_w, sizeof(float), 589824, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:91:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   91 |   fread(conv3_2_b, sizeof(float), 256, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:92:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   92 |   fread(conv3_3_w, sizeof(float), 589824, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:93:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   93 |   fread(conv3_3_b, sizeof(float), 256, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:94:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   94 |   fread(conv4_1_w, sizeof(float), 1179648, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:95:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   95 |   fread(conv4_1_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:96:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   96 |   fread(conv4_2_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:97:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   97 |   fread(conv4_2_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:98:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   98 |   fread(conv4_3_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:99:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   99 |   fread(conv4_3_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:100:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  100 |   fread(conv5_1_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:101:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  101 |   fread(conv5_1_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:102:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  102 |   fread(conv5_2_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:103:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  103 |   fread(conv5_2_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:104:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  104 |   fread(conv5_3_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:105:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  105 |   fread(conv5_3_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:106:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  106 |   fread(fc1_w, sizeof(float), 2097152, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:107:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  107 |   fread(fc1_b, sizeof(float), 4096, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:108:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  108 |   fread(fc2_w, sizeof(float), 16777216, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:109:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  109 |   fread(fc2_b, sizeof(float), 4096, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:110:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  110 |   fread(fc3_w, sizeof(float), 4096000, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_seq.c:111:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  111 |   fread(fc3_b, sizeof(float), 1000, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c: In function ‘read_params’:
+test_vgg16s_par.c:79:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   79 |   fread(input, sizeof(float), 3072, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:80:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   80 |   fread(conv1_1_w, sizeof(float), 1728, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:81:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   81 |   fread(conv1_1_b, sizeof(float), 64, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:82:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   82 |   fread(conv1_2_w, sizeof(float), 36864, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:83:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   83 |   fread(conv1_2_b, sizeof(float), 64, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:84:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   84 |   fread(conv2_1_w, sizeof(float), 73728, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:85:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   85 |   fread(conv2_1_b, sizeof(float), 128, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:86:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   86 |   fread(conv2_2_w, sizeof(float), 147456, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:87:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   87 |   fread(conv2_2_b, sizeof(float), 128, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:88:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   88 |   fread(conv3_1_w, sizeof(float), 294912, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:89:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   89 |   fread(conv3_1_b, sizeof(float), 256, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:90:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   90 |   fread(conv3_2_w, sizeof(float), 589824, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:91:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   91 |   fread(conv3_2_b, sizeof(float), 256, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:92:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   92 |   fread(conv3_3_w, sizeof(float), 589824, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:93:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   93 |   fread(conv3_3_b, sizeof(float), 256, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:94:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   94 |   fread(conv4_1_w, sizeof(float), 1179648, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:95:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   95 |   fread(conv4_1_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:96:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   96 |   fread(conv4_2_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:97:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   97 |   fread(conv4_2_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:98:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   98 |   fread(conv4_3_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:99:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   99 |   fread(conv4_3_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:100:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  100 |   fread(conv5_1_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:101:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  101 |   fread(conv5_1_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:102:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  102 |   fread(conv5_2_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:103:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  103 |   fread(conv5_2_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:104:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  104 |   fread(conv5_3_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:105:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  105 |   fread(conv5_3_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:106:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  106 |   fread(fc1_w, sizeof(float), 2097152, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:107:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  107 |   fread(fc1_b, sizeof(float), 4096, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:108:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  108 |   fread(fc2_w, sizeof(float), 16777216, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:109:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  109 |   fread(fc2_b, sizeof(float), 4096, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:110:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  110 |   fread(fc3_w, sizeof(float), 4096000, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+test_vgg16s_par.c:111:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  111 |   fread(fc3_b, sizeof(float), 1000, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c: In function ‘read_params’:
+time_vgg16s_seq.c:79:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   79 |   fread(input, sizeof(float), 3072, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:80:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   80 |   fread(conv1_1_w, sizeof(float), 1728, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:81:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   81 |   fread(conv1_1_b, sizeof(float), 64, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:82:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   82 |   fread(conv1_2_w, sizeof(float), 36864, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:83:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   83 |   fread(conv1_2_b, sizeof(float), 64, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:84:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   84 |   fread(conv2_1_w, sizeof(float), 73728, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:85:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   85 |   fread(conv2_1_b, sizeof(float), 128, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:86:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   86 |   fread(conv2_2_w, sizeof(float), 147456, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:87:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   87 |   fread(conv2_2_b, sizeof(float), 128, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:88:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   88 |   fread(conv3_1_w, sizeof(float), 294912, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:89:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   89 |   fread(conv3_1_b, sizeof(float), 256, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:90:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   90 |   fread(conv3_2_w, sizeof(float), 589824, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:91:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   91 |   fread(conv3_2_b, sizeof(float), 256, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:92:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   92 |   fread(conv3_3_w, sizeof(float), 589824, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:93:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   93 |   fread(conv3_3_b, sizeof(float), 256, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:94:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   94 |   fread(conv4_1_w, sizeof(float), 1179648, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:95:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   95 |   fread(conv4_1_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:96:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   96 |   fread(conv4_2_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:97:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   97 |   fread(conv4_2_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:98:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   98 |   fread(conv4_3_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:99:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   99 |   fread(conv4_3_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:100:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  100 |   fread(conv5_1_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:101:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  101 |   fread(conv5_1_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:102:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  102 |   fread(conv5_2_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:103:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  103 |   fread(conv5_2_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:104:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  104 |   fread(conv5_3_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:105:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  105 |   fread(conv5_3_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:106:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  106 |   fread(fc1_w, sizeof(float), 2097152, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:107:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  107 |   fread(fc1_b, sizeof(float), 4096, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:108:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  108 |   fread(fc2_w, sizeof(float), 16777216, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:109:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  109 |   fread(fc2_b, sizeof(float), 4096, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:110:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  110 |   fread(fc3_w, sizeof(float), 4096000, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_seq.c:111:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  111 |   fread(fc3_b, sizeof(float), 1000, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c: In function ‘read_params’:
+time_vgg16s_par.c:79:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   79 |   fread(input, sizeof(float), 3072, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:80:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   80 |   fread(conv1_1_w, sizeof(float), 1728, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:81:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   81 |   fread(conv1_1_b, sizeof(float), 64, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:82:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   82 |   fread(conv1_2_w, sizeof(float), 36864, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:83:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   83 |   fread(conv1_2_b, sizeof(float), 64, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:84:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   84 |   fread(conv2_1_w, sizeof(float), 73728, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:85:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   85 |   fread(conv2_1_b, sizeof(float), 128, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:86:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   86 |   fread(conv2_2_w, sizeof(float), 147456, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:87:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   87 |   fread(conv2_2_b, sizeof(float), 128, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:88:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   88 |   fread(conv3_1_w, sizeof(float), 294912, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:89:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   89 |   fread(conv3_1_b, sizeof(float), 256, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:90:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   90 |   fread(conv3_2_w, sizeof(float), 589824, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:91:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   91 |   fread(conv3_2_b, sizeof(float), 256, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:92:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   92 |   fread(conv3_3_w, sizeof(float), 589824, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:93:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   93 |   fread(conv3_3_b, sizeof(float), 256, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:94:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   94 |   fread(conv4_1_w, sizeof(float), 1179648, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:95:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   95 |   fread(conv4_1_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:96:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   96 |   fread(conv4_2_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:97:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   97 |   fread(conv4_2_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:98:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   98 |   fread(conv4_3_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:99:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   99 |   fread(conv4_3_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:100:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  100 |   fread(conv5_1_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:101:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  101 |   fread(conv5_1_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:102:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  102 |   fread(conv5_2_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:103:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  103 |   fread(conv5_2_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:104:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  104 |   fread(conv5_3_w, sizeof(float), 2359296, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:105:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  105 |   fread(conv5_3_b, sizeof(float), 512, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:106:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  106 |   fread(fc1_w, sizeof(float), 2097152, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:107:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  107 |   fread(fc1_b, sizeof(float), 4096, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:108:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  108 |   fread(fc2_w, sizeof(float), 16777216, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:109:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  109 |   fread(fc2_b, sizeof(float), 4096, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:110:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  110 |   fread(fc3_w, sizeof(float), 4096000, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+time_vgg16s_par.c:111:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  111 |   fread(fc3_b, sizeof(float), 1000, f);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ref output stats: min=-0.0428 max=0.0558 mean|.|=0.0117
+Reference output (first 10): [ 0.00079214 -0.00595927 -0.00462568  0.00918104  0.02413001  0.00111278
+ -0.00455661  0.00262338  0.02378749  0.026977  ]
+Sequential C out (first 10): [ 0.00079214 -0.00595927 -0.00462568  0.00918104  0.02413001  0.00111278
+ -0.00455661  0.00262338  0.02378749  0.026977  ]
+OpenMP C out (first 10):     [ 0.00079214 -0.00595927 -0.00462568  0.00918104  0.02413001  0.00111278
+ -0.00455661  0.00262338  0.02378749  0.026977  ]
+Max |par - numpy_ref| = 0.000e+00
+Max |par - seq|       = 0.000e+00
+Match (numpy, atol=1e-3, rtol=1e-3): True
+Match (seq, bit-exact): True
+Sequential:              150857.797 us/inference  (1.00x)
+OpenMP (1 threads):     152133.957 us/inference  (speedup 0.99x)
+OpenMP (2 threads):     78722.244 us/inference  (speedup 1.92x)
+OpenMP (4 threads):     41419.451 us/inference  (speedup 3.64x)
+OpenMP (8 threads):     26001.257 us/inference  (speedup 5.80x)

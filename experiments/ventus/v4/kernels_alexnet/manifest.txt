@@ -1,0 +1,20 @@
+conv1 512 32 in:input:6912 in:c1_w:5808 in:c1_b:16 out:c1:1936
+relu1 1952 32 in:c1:1936 out:r1:1936
+pool1 512 32 in:r1:1936 out:p1:400
+conv2 1536 32 in:p1:400 in:c2_w:19200 in:c2_b:48 out:c2:1200
+relu2 1216 32 in:c2:1200 out:r2:1200
+pool2 1536 32 in:r2:1200 out:p2:192
+conv3 3072 32 in:p2:192 in:c3_w:41472 in:c3_b:96 out:c3:384
+relu3 384 32 in:c3:384 out:r3:384
+conv4 2048 32 in:r3:384 in:c4_w:55296 in:c4_b:64 out:c4:256
+relu4 256 32 in:c4:256 out:r4:256
+conv5 2048 32 in:r4:256 in:c5_w:36864 in:c5_b:64 out:c5:256
+relu5 256 32 in:c5:256 out:r5:256
+pool5 2048 32 in:r5:256 out:p5:64
+flatten 64 32 in:p5:64 out:flat:64
+fc1 32768 32 in:flat:64 in:f1_w:65536 in:f1_b:1024 out:fc1o:1024
+relu6 1024 32 in:fc1o:1024 out:fc1r:1024
+fc2 32768 32 in:fc1r:1024 in:f2_w:1048576 in:f2_b:1024 out:fc2o:1024
+relu7 1024 32 in:fc2o:1024 out:fc2r:1024
+fc3 8192 32 in:fc2r:1024 in:f3_w:262144 in:f3_b:256 out:fc3o:256
+softmax 32 32 in:fc3o:256 out:output:256

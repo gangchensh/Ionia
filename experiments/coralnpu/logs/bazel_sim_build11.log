@@ -1,0 +1,77 @@
+Computing main repo mapping: 
+WARNING: WORKSPACE support will be removed in Bazel 9 (late 2025), please migrate to Bzlmod, see https://bazel.build/external/migration.
+DEBUG: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/rules_java/java/repositories.bzl:374:10: DEPRECATED: use rules_java_dependencies() from rules_java_deps.bzl
+Computing main repo mapping: 
+Computing main repo mapping: 
+DEBUG: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/tflite_micro/third_party/repo.bzl:86:14: 
+Warning: skipping import of repository 'bazel_skylib' because it already exists.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (1 packages loaded, 0 targets configured)
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (1 packages loaded, 0 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (59 packages loaded, 8 targets configured)
+
+INFO: Analyzed target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (157 packages loaded, 3097 targets configured).
+ERROR: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/zlib/BUILD.bazel:37:11: Compiling adler32.c failed: absolute path inclusion(s) found in rule '@@zlib//:zlib':
+the source file 'adler32.c' includes the following non-builtin files with absolute paths (if these are builtin files, make sure these paths are in your toolchain):
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/limits.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/libc-header-start.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/features.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/features-time64.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/x86-linux-gnu/bits/wordsize.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/x86-linux-gnu/bits/timesize.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/stdc-predef.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/sys/cdefs.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/x86-linux-gnu/bits/long-double.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/x86-linux-gnu/gnu/stubs.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/x86-linux-gnu/gnu/stubs-64.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/posix1_lim.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/local_lim.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/any-linux-any/linux/limits.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/pthread_stack_min-dynamic.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/pthread_stack_min.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/posix2_lim.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/sys/types.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/types.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/x86-linux-gnu/bits/typesizes.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/time64.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/types/clock_t.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/types/clockid_t.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/types/time_t.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/types/timer_t.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/stdint-intn.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/endian.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/endian.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/x86-linux-gnu/bits/endianness.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/byteswap.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/uintn-identity.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/sys/select.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/select.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/types/sigset_t.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/types/__sigset_t.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/types/struct_timeval.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/types/struct_timespec.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/pthreadtypes.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/thread-shared-types.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/x86-linux-gnu/bits/pthreadtypes-arch.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/atomic_wide_counter.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/x86-linux-gnu/bits/struct_mutex.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/x86-linux-gnu/bits/struct_rwlock.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/string.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/types/locale_t.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/types/__locale_t.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/strings.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/stdlib.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/waitflags.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/waitstatus.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/x86-linux-gnu/bits/floatn.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/floatn-common.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/alloca.h'
+  '/tmp/riscv-venv/lib/python3.12/site-packages/ziglang/lib/libc/include/generic-glibc/bits/stdlib-float.h'
+Target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 4.603s, Critical Path: 0.11s
+INFO: 7 processes: 280 action cache hit, 7 internal.
+ERROR: Build did NOT complete successfully
+exit=1

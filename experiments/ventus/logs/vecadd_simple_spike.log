@@ -1,0 +1,33 @@
+[INFO]: [HW DRIVER] in [FILE] ventus.cpp,[LINE]25,[fn] vt_dev_open: vt_dev_open : hello world from ventus.cpp
+spike device initialize: allocating local memory: to allocate at 0x70000000 with 268435456 bytes 
+spike device initialize: allocating pc source memory: to allocate at 0x80000000 with 268435456 bytes 
+### options: -DPOCL_DEVICE_ADDRESS_BITS=32 -D__USE_CLANG_OPENCL_C_H -xcl -Dinline= -I. -cl-kernel-arg-info  -D__ENDIAN_LITTLE__=1 -DCL_DEVICE_MAX_GLOBAL_VARIABLE_SIZE=0 -D__OPENCL_VERSION__=200 -cl-std=CL2.0 -D__OPENCL_C_VERSION__=200 -Dcl_khr_fp64=1 -D__opencl_c_generic_address_space=1 -D__opencl_c_named_address_space_builtins=1 -cl-ext=-all,+cl_khr_fp64,+__opencl_c_generic_address_space,+__opencl_c_named_address_space_builtins -fno-builtin -triple=riscv32 -target-cpu ventus-gpgpu user_options: 
+### Triple: riscv32, CPU: ventus-gpgpu
+
+Warning: the memory at  [0x90000000, 0x900004FF] has been realigned
+to the 4 KiB page size: [0x90000000, 0x90000FFF]
+to allocate at 0x90000000 with 4096 bytes 
+to copy to 0x90000000 with 1280 bytes
+Warning: the memory at  [0x90001000, 0x900014FF] has been realigned
+to the 4 KiB page size: [0x90001000, 0x90001FFF]
+to allocate at 0x90001000 with 4096 bytes 
+to copy to 0x90001000 with 1280 bytes
+Warning: the memory at  [0x90002000, 0x900024FF] has been realigned
+to the 4 KiB page size: [0x90002000, 0x90002FFF]
+to allocate at 0x90002000 with 4096 bytes 
+to copy to 0x90002000 with 1280 bytes
+Warning: the memory at  [0x90003000, 0x9000300B] has been realigned
+to the 4 KiB page size: [0x90003000, 0x90003FFF]
+to allocate at 0x90003000 with 4096 bytes 
+to copy to 0x90003000 with 12 bytes
+to allocate at 0x90004000 with 131072 bytes 
+Warning: the memory at  [0x90024000, 0x9002403F] has been realigned
+to the 4 KiB page size: [0x90024000, 0x90024FFF]
+to allocate at 0x90024000 with 4096 bytes 
+to copy to 0x90024000 with 64 bytes
+arg gpgpu is numw:1,numt:32,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90004000,knlbase:0x90024000,currwgid:0
+vaddr mem scope is -m0x70000000:0x90025000
+src file is object0.riscv, run log is written to object0.riscv.log
+spike -l --log-commits -p1 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x90025000 --varch vlen:1024,elen:32 --gpgpuarch numw:1,numt:32,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90004000,knlbase:0x90024000,currwgid:0 --log=object0.riscv.log object0.riscv 
+to copy from 0x90002000 with 1280 bytes
+b8d139fd b4e4b425 39f7399a 412f3b27 31e1332e b91c2e17 3c4e3074 bc16b642 3787c0aa bc9bb961 ba6b3e1c 3116b341 b4bbba16 27523f7a 354cb5a2 b4de3b7d b6ce36b6 908f2c28 370fbee1 b8043461 378dbd18 37a5bc21 b864bf47 bc433d8c b41f3bff bad23deb 3c98bf11 3a95b5fc 3e1fad8d b6f6b8e4 b43db759 bebc3738 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 Done.

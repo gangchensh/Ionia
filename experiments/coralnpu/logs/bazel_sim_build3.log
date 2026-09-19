@@ -1,0 +1,165 @@
+Starting local Bazel server (8.6.0) and connecting to it...
+Computing main repo mapping: 
+WARNING: WORKSPACE support will be removed in Bazel 9 (late 2025), please migrate to Bzlmod, see https://bazel.build/external/migration.
+DEBUG: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/rules_java/java/repositories.bzl:374:10: DEPRECATED: use rules_java_dependencies() from rules_java_deps.bzl
+DEBUG: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/tflite_micro/third_party/repo.bzl:86:14: 
+Warning: skipping import of repository 'bazel_skylib' because it already exists.
+Computing main repo mapping: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (1 packages loaded, 0 targets configured)
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (1 packages loaded, 0 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (108 packages loaded, 1195 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (156 packages loaded, 2743 targets configured)
+
+WARNING: Download from https://www.antlr.org/download/antlr4-cpp-runtime-4.13.1-source.zip failed: class java.io.IOException Connect timed out
+INFO: Repository org_antlr4_cpp_runtime instantiated at:
+  $CORALNPU_DIR/coralnpu_ws/WORKSPACE:316:22: in <toplevel>
+  ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/com_google_mpact-riscv/dep_repos.bzl:22:20: in mpact_riscv_dep_repos
+  ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/com_google_mpact-sim/repos.bzl:92:17: in mpact_sim_repos
+Repository rule http_archive defined at:
+  ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/bazel_tools/tools/build_defs/repo/http.bzl:431:31: in <toplevel>
+ERROR: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/bazel_tools/tools/build_defs/repo/http.bzl:156:45: An error occurred during the fetch of repository 'org_antlr4_cpp_runtime':
+   Traceback (most recent call last):
+	File "~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/bazel_tools/tools/build_defs/repo/http.bzl", line 156, column 45, in _http_archive_impl
+		download_info = ctx.download_and_extract(
+Error in download_and_extract: java.io.IOException: Error downloading [https://www.antlr.org/download/antlr4-cpp-runtime-4.13.1-source.zip] to ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/org_antlr4_cpp_runtime/antlr4-runtime/temp5451607754020001500/antlr4-cpp-runtime-4.13.1-source.zip: Connect timed out
+ERROR: no such package '@@org_antlr4_cpp_runtime//': java.io.IOException: Error downloading [https://www.antlr.org/download/antlr4-cpp-runtime-4.13.1-source.zip] to ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/org_antlr4_cpp_runtime/antlr4-runtime/temp5451607754020001500/antlr4-cpp-runtime-4.13.1-source.zip: Connect timed out
+ERROR: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/com_google_mpact-sim/mpact/sim/decoder/BUILD:135:16: @@com_google_mpact-sim//mpact/sim/decoder:decoder_gen depends on @@org_antlr4_cpp_runtime//:antlr4 in repository @@org_antlr4_cpp_runtime which failed to fetch. no such package '@@org_antlr4_cpp_runtime//': java.io.IOException: Error downloading [https://www.antlr.org/download/antlr4-cpp-runtime-4.13.1-source.zip] to ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/org_antlr4_cpp_runtime/antlr4-runtime/temp5451607754020001500/antlr4-cpp-runtime-4.13.1-source.zip: Connect timed out
+ERROR: Analysis of target '//sw/coralnpu_sim:coralnpu_v2_sim_pybind.so' failed; build aborted: Analysis failed
+INFO: Elapsed time: 174.530s, Critical Path: 0.05s
+INFO: 1 process: 1 internal.
+ERROR: Build did NOT complete successfully
+FAILED: 

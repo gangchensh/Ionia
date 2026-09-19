@@ -1,0 +1,8 @@
+BC32_BH14_BW14_CT16_t128_s1: min 294.7 us, med 296.9 us, 0.78 TFLOP/s, max_err 6.25e-05
+BC32_BH14_BW14_CT32_t128_s1: min 299.1 us, med 301.7 us, 0.77 TFLOP/s, max_err 6.25e-05
+BC16_BH14_BW14_CT16_t64_s1: min 198.3 us, med 200.4 us, 1.17 TFLOP/s, max_err 6.25e-05
+BC32_BH7_BW28_CT16_t128_s1: min 318.3 us, med 320.5 us, 0.73 TFLOP/s, max_err 6.25e-05
+BC16_BH14_BW14_CT16_t64_s2: min 199.6 us, med 202.0 us, 1.16 TFLOP/s, max_err 6.25e-05
+BC32_BH14_BW14_CT16_t128_s2: min 285.8 us, med 296.1 us, 0.81 TFLOP/s, max_err 6.25e-05
+cuDNN tf32=False: min 213.4 us, med 252.4 us, 1.08 TFLOP/s
+cuDNN tf32=True: min 44.0 us, med 51.8 us, 5.26 TFLOP/s

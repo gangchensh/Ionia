@@ -1,0 +1,2 @@
+resnet18 eager TF32=off: min=2.316 median=2.359
+resnet18 eager TF32=on: min=1.106 median=1.296

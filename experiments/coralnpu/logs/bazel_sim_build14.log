@@ -1,0 +1,280 @@
+Computing main repo mapping: 
+DEBUG: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/rules_java/java/repositories.bzl:374:10: DEPRECATED: use rules_java_dependencies() from rules_java_deps.bzl
+DEBUG: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/tflite_micro/third_party/repo.bzl:86:14: 
+Warning: skipping import of repository 'bazel_skylib' because it already exists.
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (1 packages loaded, 0 targets configured)
+Analyzing: target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (1 packages loaded, 0 targets configured)
+
+INFO: Analyzed target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so (157 packages loaded, 3096 targets configured).
+[623 / 1,446] Compiling pybind11_abseil/import_status_module.cc; 0s linux-sandbox ... (6 actions, 5 running)
+[1,139 / 1,446] Compiling pybind11_abseil/import_status_module.cc; 1s linux-sandbox ... (6 actions, 5 running)
+[1,169 / 1,446] Compiling absl/synchronization/barrier.cc; 0s linux-sandbox ... (6 actions, 5 running)
+[1,196 / 1,446] Compiling absl/log/internal/log_message.cc; 0s linux-sandbox ... (6 actions, 5 running)
+[1,243 / 1,446] Compiling absl/status/internal/status_internal.cc; 0s linux-sandbox ... (6 actions, 5 running)
+[1,257 / 1,446] Compiling mpact/sim/generic/program_error.cc; 1s linux-sandbox ... (6 actions, 5 running)
+[1,276 / 1,446] Compiling src/google/protobuf/arenastring.cc; 0s linux-sandbox ... (6 actions, 5 running)
+[1,300 / 1,446] Compiling src/google/protobuf/extension_set.cc; 1s linux-sandbox ... (6 actions, 5 running)
+[1,307 / 1,446] Compiling src/google/protobuf/io/printer.cc; 1s linux-sandbox ... (6 actions, 5 running)
+[1,316 / 1,446] Compiling src/google/protobuf/generated_message_tctable_lite.cc; 0s linux-sandbox ... (6 actions running)
+[1,319 / 1,446] Compiling src/google/protobuf/generated_message_tctable_lite.cc; 1s linux-sandbox ... (6 actions running)
+[1,326 / 1,446] Compiling mpact/sim/generic/arch_state.cc; 2s linux-sandbox ... (6 actions, 5 running)
+[1,333 / 1,446] Compiling src/google/protobuf/descriptor.cc; 1s linux-sandbox ... (6 actions, 5 running)
+[1,337 / 1,446] Compiling src/google/protobuf/descriptor.cc; 3s linux-sandbox ... (6 actions running)
+[1,343 / 1,446] Compiling src/google/protobuf/descriptor.cc; 4s linux-sandbox ... (6 actions, 5 running)
+[1,347 / 1,446] Compiling src/google/protobuf/descriptor.cc; 5s linux-sandbox ... (6 actions, 5 running)
+[1,351 / 1,446] Compiling src/google/protobuf/descriptor.cc; 7s linux-sandbox ... (6 actions running)
+[1,357 / 1,446] Compiling src/google/protobuf/feature_resolver.cc; 2s linux-sandbox ... (6 actions, 5 running)
+[1,362 / 1,446] Compiling src/google/protobuf/descriptor.pb.cc; 1s linux-sandbox ... (6 actions, 5 running)
+[1,365 / 1,446] Compiling mpact/sim/util/memory/cache.cc; 2s linux-sandbox ... (6 actions, 5 running)
+[1,377 / 1,446] Compiling riscv/riscv_misa.cc; 1s linux-sandbox ... (6 actions running)
+[1,378 / 1,446] Compiling riscv/riscv_top.cc; 1s linux-sandbox ... (6 actions running)
+[1,384 / 1,446] Compiling riscv/riscv_top.cc; 2s linux-sandbox ... (6 actions, 5 running)
+[1,389 / 1,446] Compiling riscv/riscv_state.cc; 2s linux-sandbox ... (6 actions running)
+[1,393 / 1,446] Compiling riscv/riscv_state.cc; 3s linux-sandbox ... (6 actions running)
+[1,396 / 1,446] Compiling riscv/debug_command_shell.cc; 3s linux-sandbox ... (6 actions, 5 running)
+[1,402 / 1,446] Compiling mpact/sim/util/memory/single_initiator_router.cc; 1s linux-sandbox ... (6 actions, 5 running)
+[1,404 / 1,446] Compiling external/coralnpu_mpact/sim/coralnpu_m3_decoder.cc; 2s linux-sandbox ... (6 actions, 5 running)
+[1,408 / 1,446] Compiling external/coralnpu_mpact/sim/coralnpu_m3_decoder.cc; 3s linux-sandbox ... (6 actions running)
+[1,409 / 1,446] Compiling external/coralnpu_mpact/sim/coralnpu_m3_decoder.cc; 4s linux-sandbox ... (6 actions, 5 running)
+[1,412 / 1,446] Compiling riscv/riscv_vector_opm_instructions.cc; 3s linux-sandbox ... (6 actions, 5 running)
+[1,415 / 1,446] Compiling riscv/riscv_vector_opm_instructions.cc; 4s linux-sandbox ... (6 actions, 5 running)
+[1,418 / 1,446] Compiling riscv/riscv_vector_fp_unary_instructions.cc; 3s linux-sandbox ... (6 actions, 5 running)
+[1,422 / 1,446] Compiling external/coralnpu_mpact/sim/coralnpu_m3_encoder.cc; 3s linux-sandbox ... (6 actions, 5 running)
+[1,428 / 1,446] Compiling external/coralnpu_mpact/sim/coralnpu_m3_encoder.cc; 4s linux-sandbox ... (6 actions running)
+ERROR: ~/.cache/bazel/_bazel_user/9107dd7811a11572035801e9bee22d17/external/coralnpu_mpact/sim/BUILD:440:11: Compiling sim/coralnpu_m3_encoding.cc failed: (Exit 1): gcc failed: error executing CppCompile command (from target @@coralnpu_mpact//sim:coralnpu_m3_user_decoder) /usr/bin/gcc -U_FORTIFY_SOURCE -fstack-protector -Wall -Wunused-but-set-parameter -Wno-free-nonheap-object -fno-omit-frame-pointer '-std=c++17' -MD -MF ... (remaining 81 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+In file included from external/com_google_mpact-sim/mpact/sim/generic/instruction.h:29,
+                 from bazel-out/k8-fastbuild/bin/external/coralnpu_mpact/sim/coralnpu_m3_decoder.h:9,
+                 from bazel-out/k8-fastbuild/bin/external/coralnpu_mpact/sim/coralnpu_m3_bin_decoder.h:12,
+                 from external/coralnpu_mpact/sim/coralnpu_m3_encoding.h:20,
+                 from external/coralnpu_mpact/sim/coralnpu_m3_encoding.cc:15:
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<float>::IsInf(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:192:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  192 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<float>::IsNaN(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:196:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  196 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<float>::IsSNaN(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:200:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  200 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<float>::IsQNaN(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:204:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  204 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<float>::SignBit(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:208:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  208 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<double>::IsInf(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:230:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  230 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<double>::IsNaN(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:234:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  234 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<double>::IsSNaN(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:238:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  238 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<double>::IsQNaN(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:242:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  242 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In static member function 'static bool mpact::sim::generic::FPTypeInfo<double>::SignBit(T)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:246:26: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  246 |     UIntType uint_val = *reinterpret_cast<UIntType*>(&value);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h: In function 'float mpact::sim::generic::ConvertHalfToSingle(HalfFP)':
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:429:13: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  429 |     return *reinterpret_cast<float*>(&float_uint);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:434:13: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  434 |     return *reinterpret_cast<float*>(&float_uint);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:440:13: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  440 |     return *reinterpret_cast<float*>(&float_uint);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:445:13: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  445 |     return *reinterpret_cast<float*>(&float_uint);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:450:13: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  450 |     return *reinterpret_cast<float*>(&float_uint);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/type_helpers.h:470:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  470 |   return *reinterpret_cast<float*>(&float_uint);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/instruction.h: In function 'T mpact::sim::generic::GetInstructionSource(const Instruction*, int) [with T = float]':
+external/com_google_mpact-sim/mpact/sim/generic/instruction.h:288:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  288 |   return *reinterpret_cast<float*>(&value);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/instruction.h: In function 'T mpact::sim::generic::GetInstructionSource(const Instruction*, int) [with T = double]':
+external/com_google_mpact-sim/mpact/sim/generic/instruction.h:303:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  303 |   return *reinterpret_cast<double*>(&value);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/instruction.h: In function 'T mpact::sim::generic::GetInstructionSource(const Instruction*, int, int) [with T = float]':
+external/com_google_mpact-sim/mpact/sim/generic/instruction.h:362:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  362 |   return *reinterpret_cast<float*>(&value);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/com_google_mpact-sim/mpact/sim/generic/instruction.h: In function 'T mpact::sim::generic::GetInstructionSource(const Instruction*, int, int) [with T = double]':
+external/com_google_mpact-sim/mpact/sim/generic/instruction.h:378:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  378 |   return *reinterpret_cast<double*>(&value);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from external/coralnpu_mpact/sim/coralnpu_v2_encoding_template.h:20,
+                 from external/coralnpu_mpact/sim/coralnpu_m3_encoding.h:23:
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h: In lambda function:
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:100:19: error: 'GetRegisterSourceOp' was not declared in this scope; did you mean 'mpact::sim::riscv::GetRegisterSourceOp'?
+  100 |            return GetRegisterSourceOp<RVFpRegister>(
+      |                   ^~~~~~~~~~~~~~~~~~~
+      |                   mpact::sim::riscv::GetRegisterSourceOp
+In file included from external/coralnpu_mpact/sim/coralnpu_v2_getters.h:27:
+external/com_google_mpact-riscv/riscv/riscv_getter_helpers.h:115:32: note: 'mpact::sim::riscv::GetRegisterSourceOp' declared here
+  115 | inline SourceOperandInterface* GetRegisterSourceOp(RiscVState* state,
+      |                                ^~~~~~~~~~~~~~~~~~~
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:100:51: error: expected primary-expression before '>' token
+  100 |            return GetRegisterSourceOp<RVFpRegister>(
+      |                                                   ^
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h: In lambda function:
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:107:19: error: 'GetRegisterSourceOp' was not declared in this scope; did you mean 'mpact::sim::riscv::GetRegisterSourceOp'?
+  107 |            return GetRegisterSourceOp<RVFpRegister>(
+      |                   ^~~~~~~~~~~~~~~~~~~
+      |                   mpact::sim::riscv::GetRegisterSourceOp
+external/com_google_mpact-riscv/riscv/riscv_getter_helpers.h:115:32: note: 'mpact::sim::riscv::GetRegisterSourceOp' declared here
+  115 | inline SourceOperandInterface* GetRegisterSourceOp(RiscVState* state,
+      |                                ^~~~~~~~~~~~~~~~~~~
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:107:51: error: expected primary-expression before '>' token
+  107 |            return GetRegisterSourceOp<RVFpRegister>(
+      |                                                   ^
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h: In lambda function:
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:114:19: error: 'GetRegisterSourceOp' was not declared in this scope; did you mean 'mpact::sim::riscv::GetRegisterSourceOp'?
+  114 |            return GetRegisterSourceOp<RVFpRegister>(
+      |                   ^~~~~~~~~~~~~~~~~~~
+      |                   mpact::sim::riscv::GetRegisterSourceOp
+external/com_google_mpact-riscv/riscv/riscv_getter_helpers.h:115:32: note: 'mpact::sim::riscv::GetRegisterSourceOp' declared here
+  115 | inline SourceOperandInterface* GetRegisterSourceOp(RiscVState* state,
+      |                                ^~~~~~~~~~~~~~~~~~~
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:114:51: error: expected primary-expression before '>' token
+  114 |            return GetRegisterSourceOp<RVFpRegister>(
+      |                                                   ^
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h: In lambda function:
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:180:19: error: 'GetRegisterSourceOp' was not declared in this scope; did you mean 'mpact::sim::riscv::GetRegisterSourceOp'?
+  180 |            return GetRegisterSourceOp<RV32Register>(
+      |                   ^~~~~~~~~~~~~~~~~~~
+      |                   mpact::sim::riscv::GetRegisterSourceOp
+external/com_google_mpact-riscv/riscv/riscv_getter_helpers.h:115:32: note: 'mpact::sim::riscv::GetRegisterSourceOp' declared here
+  115 | inline SourceOperandInterface* GetRegisterSourceOp(RiscVState* state,
+      |                                ^~~~~~~~~~~~~~~~~~~
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:180:51: error: expected primary-expression before '>' token
+  180 |            return GetRegisterSourceOp<RV32Register>(
+      |                                                   ^
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h: In lambda function:
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:188:19: error: 'GetRegisterSourceOp' was not declared in this scope; did you mean 'mpact::sim::riscv::GetRegisterSourceOp'?
+  188 |            return GetRegisterSourceOp<RV32Register>(
+      |                   ^~~~~~~~~~~~~~~~~~~
+      |                   mpact::sim::riscv::GetRegisterSourceOp
+external/com_google_mpact-riscv/riscv/riscv_getter_helpers.h:115:32: note: 'mpact::sim::riscv::GetRegisterSourceOp' declared here
+  115 | inline SourceOperandInterface* GetRegisterSourceOp(RiscVState* state,
+      |                                ^~~~~~~~~~~~~~~~~~~
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:188:51: error: expected primary-expression before '>' token
+  188 |            return GetRegisterSourceOp<RV32Register>(
+      |                                                   ^
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h: In lambda function:
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:233:19: error: 'GetVectorMaskRegisterSourceOp' was not declared in this scope; did you mean 'mpact::sim::riscv::GetVectorMaskRegisterSourceOp'?
+  233 |            return GetVectorMaskRegisterSourceOp<RVVectorRegister>(
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   mpact::sim::riscv::GetVectorMaskRegisterSourceOp
+In file included from external/coralnpu_mpact/sim/coralnpu_v2_getters.h:28:
+external/com_google_mpact-riscv/riscv/riscv_getters_vector.h:84:32: note: 'mpact::sim::riscv::GetVectorMaskRegisterSourceOp' declared here
+   84 | inline SourceOperandInterface* GetVectorMaskRegisterSourceOp(RiscVState* state,
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:233:65: error: expected primary-expression before '>' token
+  233 |            return GetVectorMaskRegisterSourceOp<RVVectorRegister>(
+      |                                                                 ^
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h: In lambda function:
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:276:19: error: 'GetRegisterDestinationOp' was not declared in this scope; did you mean 'mpact::sim::riscv::GetRegisterDestinationOp'?
+  276 |            return GetRegisterDestinationOp<RV32Register>(
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                   mpact::sim::riscv::GetRegisterDestinationOp
+external/com_google_mpact-riscv/riscv/riscv_getter_helpers.h:86:37: note: 'mpact::sim::riscv::GetRegisterDestinationOp' declared here
+   86 | inline DestinationOperandInterface* GetRegisterDestinationOp(
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:276:56: error: expected primary-expression before '>' token
+  276 |            return GetRegisterDestinationOp<RV32Register>(
+      |                                                        ^
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h: In lambda function:
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:281:19: error: 'GetCSRSetBitsDestinationOp' was not declared in this scope; did you mean 'mpact::sim::riscv::GetCSRSetBitsDestinationOp'?
+  281 |            return GetCSRSetBitsDestinationOp<uint32_t>(common->state(),
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   mpact::sim::riscv::GetCSRSetBitsDestinationOp
+external/com_google_mpact-riscv/riscv/riscv_getter_helpers.h:94:37: note: 'mpact::sim::riscv::GetCSRSetBitsDestinationOp' declared here
+   94 | inline DestinationOperandInterface* GetCSRSetBitsDestinationOp(
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:281:54: error: expected primary-expression before '>' token
+  281 |            return GetCSRSetBitsDestinationOp<uint32_t>(common->state(),
+      |                                                      ^
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h: In lambda function:
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:287:19: error: 'GetRegisterDestinationOp' was not declared in this scope; did you mean 'mpact::sim::riscv::GetRegisterDestinationOp'?
+  287 |            return GetRegisterDestinationOp<RVFpRegister>(
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                   mpact::sim::riscv::GetRegisterDestinationOp
+external/com_google_mpact-riscv/riscv/riscv_getter_helpers.h:86:37: note: 'mpact::sim::riscv::GetRegisterDestinationOp' declared here
+   86 | inline DestinationOperandInterface* GetRegisterDestinationOp(
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:287:56: error: expected primary-expression before '>' token
+  287 |            return GetRegisterDestinationOp<RVFpRegister>(
+      |                                                        ^
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h: In lambda function:
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:293:19: error: 'GetRegisterDestinationOp' was not declared in this scope; did you mean 'mpact::sim::riscv::GetRegisterDestinationOp'?
+  293 |            return GetRegisterDestinationOp<RV32Register>(
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                   mpact::sim::riscv::GetRegisterDestinationOp
+external/com_google_mpact-riscv/riscv/riscv_getter_helpers.h:86:37: note: 'mpact::sim::riscv::GetRegisterDestinationOp' declared here
+   86 | inline DestinationOperandInterface* GetRegisterDestinationOp(
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:293:56: error: expected primary-expression before '>' token
+  293 |            return GetRegisterDestinationOp<RV32Register>(
+      |                                                        ^
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h: In lambda function:
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:300:21: error: 'GetRegisterDestinationOp' was not declared in this scope; did you mean 'mpact::sim::riscv::GetRegisterDestinationOp'?
+  300 |              return GetRegisterDestinationOp<RV32Register>(common->state(),
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                     mpact::sim::riscv::GetRegisterDestinationOp
+external/com_google_mpact-riscv/riscv/riscv_getter_helpers.h:86:37: note: 'mpact::sim::riscv::GetRegisterDestinationOp' declared here
+   86 | inline DestinationOperandInterface* GetRegisterDestinationOp(
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:300:58: error: expected primary-expression before '>' token
+  300 |              return GetRegisterDestinationOp<RV32Register>(common->state(),
+      |                                                          ^
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:303:21: error: 'GetRegisterDestinationOp' was not declared in this scope; did you mean 'mpact::sim::riscv::GetRegisterDestinationOp'?
+  303 |              return GetRegisterDestinationOp<RV32Register>(
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                     mpact::sim::riscv::GetRegisterDestinationOp
+external/com_google_mpact-riscv/riscv/riscv_getter_helpers.h:86:37: note: 'mpact::sim::riscv::GetRegisterDestinationOp' declared here
+   86 | inline DestinationOperandInterface* GetRegisterDestinationOp(
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:303:58: error: expected primary-expression before '>' token
+  303 |              return GetRegisterDestinationOp<RV32Register>(
+      |                                                          ^
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h: In lambda function:
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:311:19: error: 'GetVectorRegisterDestinationOp' was not declared in this scope; did you mean 'mpact::sim::riscv::GetVectorRegisterDestinationOp'?
+  311 |            return GetVectorRegisterDestinationOp<RVVectorRegister>(
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   mpact::sim::riscv::GetVectorRegisterDestinationOp
+external/com_google_mpact-riscv/riscv/riscv_getters_vector.h:73:37: note: 'mpact::sim::riscv::GetVectorRegisterDestinationOp' declared here
+   73 | inline DestinationOperandInterface* GetVectorRegisterDestinationOp(
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/coralnpu_mpact/sim/coralnpu_v2_getters.h:311:66: error: expected primary-expression before '>' token
+  311 |            return GetVectorRegisterDestinationOp<RVVectorRegister>(
+      |                                                                  ^
+Target //sw/coralnpu_sim:coralnpu_v2_sim_pybind.so failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 42.596s, Critical Path: 7.89s
+INFO: 254 processes: 1186 action cache hit, 7 internal, 247 linux-sandbox.
+ERROR: Build did NOT complete successfully
+exit=1

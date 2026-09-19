@@ -1,0 +1,75 @@
+vgg16p: 37 top-level components
+vgg16p component 0: matched, output = conv1_1_out
+vgg16p component 1: matched, output = relu1_1_out
+vgg16p component 2: matched, output = conv1_2_out
+vgg16p component 3: matched, output = relu1_2_out
+vgg16p component 4: matched, output = pool1_out
+vgg16p component 5: matched, output = conv2_1_out
+vgg16p component 6: matched, output = relu2_1_out
+vgg16p component 7: matched, output = conv2_2_out
+vgg16p component 8: matched, output = relu2_2_out
+vgg16p component 9: matched, output = pool2_out
+vgg16p component 10: matched, output = conv3_1_out
+vgg16p component 11: matched, output = relu3_1_out
+vgg16p component 12: matched, output = conv3_2_out
+vgg16p component 13: matched, output = relu3_2_out
+vgg16p component 14: matched, output = conv3_3_out
+vgg16p component 15: matched, output = relu3_3_out
+vgg16p component 16: matched, output = pool3_out
+vgg16p component 17: matched, output = conv4_1_out
+vgg16p component 18: matched, output = relu4_1_out
+vgg16p component 19: matched, output = conv4_2_out
+vgg16p component 20: matched, output = relu4_2_out
+vgg16p component 21: matched, output = conv4_3_out
+vgg16p component 22: matched, output = relu4_3_out
+vgg16p component 23: matched, output = pool4_out
+vgg16p component 24: matched, output = conv5_1_out
+vgg16p component 25: matched, output = relu5_1_out
+vgg16p component 26: matched, output = conv5_2_out
+vgg16p component 27: matched, output = relu5_2_out
+vgg16p component 28: matched, output = conv5_3_out
+vgg16p component 29: matched, output = relu5_3_out
+vgg16p component 30: matched, output = pool5_out
+vgg16p component 31: matched, output = flatten_out
+vgg16p component 32: matched, output = fc1_out
+vgg16p component 33: matched, output = fc1_relu_out
+vgg16p component 34: matched, output = fc2_out
+vgg16p component 35: matched, output = fc2_relu_out
+vgg16p component 36: matched, output = output
+vgg16p: 37 patterns -> 22 kernels after fusion
+  kernel ast_relu1_1_out_fused        out_dims = [1;64;224;224]
+  kernel ast_relu1_2_out_fused        out_dims = [1;64;224;224]
+  kernel ast_pool1_out                out_dims = [1;64;112;112]
+  kernel ast_relu2_1_out_fused        out_dims = [1;128;112;112]
+  kernel ast_relu2_2_out_fused        out_dims = [1;128;112;112]
+  kernel ast_pool2_out                out_dims = [1;128;56;56]
+  kernel ast_relu3_1_out_fused        out_dims = [1;256;56;56]
+  kernel ast_relu3_2_out_fused        out_dims = [1;256;56;56]
+  kernel ast_relu3_3_out_fused        out_dims = [1;256;56;56]
+  kernel ast_pool3_out                out_dims = [1;256;28;28]
+  kernel ast_relu4_1_out_fused        out_dims = [1;512;28;28]
+  kernel ast_relu4_2_out_fused        out_dims = [1;512;28;28]
+  kernel ast_relu4_3_out_fused        out_dims = [1;512;28;28]
+  kernel ast_pool4_out                out_dims = [1;512;14;14]
+  kernel ast_relu5_1_out_fused        out_dims = [1;512;14;14]
+  kernel ast_relu5_2_out_fused        out_dims = [1;512;14;14]
+  kernel ast_relu5_3_out_fused        out_dims = [1;512;14;14]
+  kernel ast_pool5_out                out_dims = [1;512;7;7]
+  kernel ast_flatten_out              out_dims = [1;25088]
+  kernel ast_fc1_relu_out_fused       out_dims = [1;4096]
+  kernel ast_fc2_relu_out_fused       out_dims = [1;4096]
+  kernel ast_output                   out_dims = [1;1000]
+Wrote CUDA file: vgg16p_test_cuda_output.cu
+Wrapped CUDA test written to vgg16p_test.cu
+GPU kernel chain TIME (ms, 3 runs): 19.068, 19.850, 18.256  min=18.256
+MEMTIME_H2D (ms): min=1658.238   MEMTIME_D2H (ms): min=0.085
+ref output stats: min=-0.0530 max=0.0466 mean|.|=0.0113
+NumPy reference (first 10): [-0.00052977 -0.00122082 -0.0192473   0.01023091 -0.02541833 -0.00630597
+  0.0125818   0.03159805 -0.03209675 -0.01796512]
+CUDA output     (first 10): [-0.00052978 -0.00122087 -0.0192473   0.01023092 -0.02541833 -0.00630596
+  0.0125818   0.03159804 -0.03209674 -0.01796512]
+max abs error vs numpy: 9.686e-08
+max rel error vs numpy: 1.174e-03
+vgg16p_test vs numpy: PASSED (atol=1e-5, rtol=1e-5)
+max abs error vs sequential C: 9.686e-08  (bit-exact: False)
+exit=0

@@ -1,0 +1,7 @@
+# Generated / build artifacts (regenerate with `make all`)
+build/
+coq/demo_comm.ml
+coq/demo_comm.mli
+ocaml/demo_sym.ml
+ocaml/demo_to_cuda
+__pycache__/

@@ -1,0 +1,10 @@
+gemv_BN128_BK8_t128: min 1378.1 us, med 1390.2 us, 298 GB/s, err 3.58e-05
+gemv_BN256_BK4_t256: min 2801.8 us, med 2813.5 us, 147 GB/s, err 3.58e-05
+gemv_BN128_BK16_t128: min 863.4 us, med 878.9 us, 476 GB/s, err 3.58e-05
+gemv_BN512_BK4_t256: min 2354.9 us, med 2686.6 us, 175 GB/s, err 3.58e-05
+torch gemv (cublas fp32): min 564.9 us, 728 GB/s
+gemm_BM128_BN128_BK32_t256_s2: min 2.854 ms, 48.15 TFLOP/s, max_err 2.69e-03 rel 7.62e-04
+gemm_BM128_BN64_BK32_t128_s3: min 4.519 ms, 30.41 TFLOP/s, max_err 2.69e-03 rel 7.62e-04
+gemm_BM64_BN64_BK32_t128_s3: min 7.839 ms, 17.53 TFLOP/s, max_err 2.69e-03 rel 7.62e-04
+torch matmul tf32=False: 8.843 ms, 15.54 TFLOP/s
+torch matmul tf32=True: 3.044 ms, 45.15 TFLOP/s

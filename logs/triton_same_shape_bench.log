@@ -1,0 +1,4 @@
+triton conv128@28: min 122.2 us, med 124.5 us, 1.89 TFLOP/s, err 6.25e-05
+triton gemv 25088x4096: min 7712.1 us, 53 GB/s, err 3.43e-05
+triton matmul4096 ieee: 9.429 ms, 14.58 TFLOP/s, err 0.00e+00
+triton matmul4096 tf32: 4.196 ms, 32.75 TFLOP/s, err 2.59e-03

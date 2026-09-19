@@ -1,0 +1,353 @@
+== 1. Build the comm_to_opencl printer ==
+File "lenet5_sym.ml", lines 99-101, characters 13-10:
+ 99 | .............match n with
+100 | | O -> n
+101 | | S u -> u
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 160-162, characters 13-31:
+160 | .............(match m with
+161 |               | O -> n
+162 |               | S l -> sub k l)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 158-162, characters 4-31:
+158 | ....match n with
+159 |     | O -> n
+160 |     | S k -> (match m with
+161 |               | O -> n
+162 |               | S l -> sub k l)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 175-177, characters 18-28:
+175 | ..................function
+176 |   | O -> S O
+177 |   | S m0 -> mul n (pow n m0)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 185-187, characters 6-35:
+185 | ......(match u with
+186 |        | O -> divmod x' y (S q0) y
+187 |        | S u' -> divmod x' y q0 u')
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 182-187, characters 4-35:
+182 | ....match x with
+183 |     | O -> (q0, u)
+184 |     | S x' ->
+185 |       (match u with
+186 |        | O -> divmod x' y (S q0) y
+187 |        | S u' -> divmod x' y q0 u')
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 324-326, characters 24-31:
+324 | ........................function
+325 |   | O -> XH
+326 |   | S x -> succ (of_succ_nat x)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 506-534, characters 4-31:
+506 | ....match n with
+507 |     | O -> (XH, ((a, b)))
+508 |     | S n0 ->
+509 |       (match a with
+510 |        | XI a' ->
+...
+531 |             let (aa, bb) = p in (g, (((XO aa), bb)))
+532 |           | XO b0 -> let (g, p) = ggcdn n0 a0 b0 in ((XO g), p)
+533 |           | XH -> (XH, ((a, XH))))
+534 |        | XH -> (XH, ((XH, b))))
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 546-548, characters 11-37:
+546 | ...........(match x with
+547 |             | O -> XH
+548 |             | S _ -> succ (of_nat x))
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 544-548, characters 19-37:
+544 | ...................function
+545 |   | O -> XH
+546 |   | S x -> (match x with
+547 |             | O -> XH
+548 |             | S _ -> succ (of_nat x))
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 669-671, characters 15-37:
+669 | ...............function
+670 |   | O -> Z0
+671 |   | S n0 -> Zpos (Pos.of_succ_nat n0)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 925-937, characters 28-35:
+925 | ............................function
+926 | | O -> assert false (* absurd case *)
+927 | | S n0 ->
+928 |   let b =
+929 |     f
+...
+934 |    | True ->
+935 |      qplus (lowerCutBelow f) { qnum = (Z.of_nat n0); qden =
+936 |        (Coq_Pos.of_nat (S n)) }
+937 |    | False -> dRealQlim_rec f n n0)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 1243-1249, characters 26-45:
+1243 | ..........................(match n8 with
+1244 |                            | O ->
+1245 |                              Ascii (True, False, False, True, True, True,
+1246 |                                False, False)
+1247 |                            | S _ ->
+1248 |                              Ascii (False, False, False, False, True, True,
+1249 |                                False, False))........
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 1238-1249, characters 23-46:
+1238 | .......................(match n7 with
+1239 |                         | O ->
+1240 |                           Ascii (False, False, False, True, True, True,
+1241 |                             False, False)
+1242 |                         | S n8 ->
+...
+1246 |                                False, False)
+1247 |                            | S _ ->
+1248 |                              Ascii (False, False, False, False, True, True,
+1249 |                                False, False))).......
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 1233-1249, characters 20-47:
+1233 | ....................(match n6 with
+1234 |                      | O ->
+1235 |                        Ascii (True, True, True, False, True, True, False,
+1236 |                          False)
+1237 |                      | S n7 ->
+...
+1246 |                                False, False)
+1247 |                            | S _ ->
+1248 |                              Ascii (False, False, False, False, True, True,
+1249 |                                False, False))))......
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 1229-1249, characters 17-48:
+1229 | .................(match n5 with
+1230 |                   | O ->
+1231 |                     Ascii (False, True, True, False, True, True, False, False)
+1232 |                   | S n6 ->
+1233 |                     (match n6 with
+...
+1246 |                                False, False)
+1247 |                            | S _ ->
+1248 |                              Ascii (False, False, False, False, True, True,
+1249 |                                False, False))))).....
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 1225-1249, characters 14-49:
+1225 | ..............(match n4 with
+1226 |                | O ->
+1227 |                  Ascii (True, False, True, False, True, True, False, False)
+1228 |                | S n5 ->
+1229 |                  (match n5 with
+...
+1246 |                                False, False)
+1247 |                            | S _ ->
+1248 |                              Ascii (False, False, False, False, True, True,
+1249 |                                False, False))))))....
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 1222-1249, characters 11-50:
+1222 | ...........(match n3 with
+1223 |             | O -> Ascii (False, False, True, False, True, True, False, False)
+1224 |             | S n4 ->
+1225 |               (match n4 with
+1226 |                | O ->
+...
+1246 |                                False, False)
+1247 |                            | S _ ->
+1248 |                              Ascii (False, False, False, False, True, True,
+1249 |                                False, False)))))))...
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 1219-1249, characters 8-51:
+1219 | ........(match n2 with
+1220 |          | O -> Ascii (True, True, False, False, True, True, False, False)
+1221 |          | S n3 ->
+1222 |            (match n3 with
+1223 |             | O -> Ascii (False, False, True, False, True, True, False, False)
+...
+1246 |                                False, False)
+1247 |                            | S _ ->
+1248 |                              Ascii (False, False, False, False, True, True,
+1249 |                                False, False))))))))..
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 1216-1249, characters 5-52:
+1216 | .....(match n1 with
+1217 |       | O -> Ascii (False, True, False, False, True, True, False, False)
+1218 |       | S n2 ->
+1219 |         (match n2 with
+1220 |          | O -> Ascii (True, True, False, False, True, True, False, False)
+...
+1246 |                                False, False)
+1247 |                            | S _ ->
+1248 |                              Ascii (False, False, False, False, True, True,
+1249 |                                False, False))))))))).
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 1213-1249, characters 2-53:
+1213 | ..(match n0 with
+1214 |    | O -> Ascii (True, False, False, False, True, True, False, False)
+1215 |    | S n1 ->
+1216 |      (match n1 with
+1217 |       | O -> Ascii (False, True, False, False, True, True, False, False)
+...
+1246 |                                False, False)
+1247 |                            | S _ ->
+1248 |                              Ascii (False, False, False, False, True, True,
+1249 |                                False, False))))))))))
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 1210-1249, characters 17-53:
+1210 | .................function
+1211 | | O -> Ascii (False, False, False, False, True, True, False, False)
+1212 | | S n0 ->
+1213 |   (match n0 with
+1214 |    | O -> Ascii (True, False, False, False, True, True, False, False)
+...
+1246 |                                False, False)
+1247 |                            | S _ ->
+1248 |                              Ascii (False, False, False, False, True, True,
+1249 |                                False, False))))))))))
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 1280-1282, characters 2-36:
+1280 | ..match m with
+1281 |   | O -> Obj.magic (fun _ -> Obj.magic ())
+1282 |   | S m' -> Obj.magic (fun i -> x i)
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+File "lenet5_sym.ml", lines 1287-1289, characters 2-40:
+1287 | ..match n with
+1288 |   | O -> x0
+1289 |   | S n' -> (Obj.magic x : fin -> __) x1
+Warning 8 [partial-match]: this pattern-matching is not exhaustive.
+Here is an example of a case that is not matched:
+(Var _|Add (_, _)|Mul (_, _)|Sub (_, _)|Div (_, _)|Mod (_, _))
+== 2. Generate the LeNet-5 OpenCL kernel chain ==
+comm_to_opencl: wrote 13 kernels + manifest to $VENTUS_DIR/v3/kernels
+total 12
+drwxrwxrwx 1 user user 4096 Aug 31 11:52 .
+drwxrwxrwx 1 user user 4096 Aug 31 11:54 ..
+-rwxrwxrwx 1 user user  678 Aug 31 11:54 conv1.cl
+-rwxrwxrwx 1 user user  673 Aug 31 11:54 conv2.cl
+-rwxrwxrwx 1 user user  837 Aug 31 11:54 fc1.cl
+-rwxrwxrwx 1 user user  836 Aug 31 11:54 fc2.cl
+-rwxrwxrwx 1 user user  833 Aug 31 11:54 fc3.cl
+-rwxrwxrwx 1 user user  259 Aug 31 11:54 flatten.cl
+-rwxrwxrwx 1 user user  599 Aug 31 11:54 manifest.txt
+-rwxrwxrwx 1 user user  703 Aug 31 11:54 pool1.cl
+-rwxrwxrwx 1 user user  696 Aug 31 11:54 pool2.cl
+-rwxrwxrwx 1 user user  304 Aug 31 11:54 relu1.cl
+-rwxrwxrwx 1 user user  304 Aug 31 11:54 relu2.cl
+-rwxrwxrwx 1 user user  315 Aug 31 11:54 relu3.cl
+-rwxrwxrwx 1 user user  314 Aug 31 11:54 relu4.cl
+-rwxrwxrwx 1 user user  412 Aug 31 11:54 softmax.cl
+== 3. Build the chained host ==
+In file included from $VENTUS_DIR/v3/v3_host.cc:7:
+In file included from $VENTUS_DIR/toolchain/install/include/CL/cl.h:20:
+$VENTUS_DIR/toolchain/install/include/CL/cl_version.h:22:9: warning: cl_version.h: CL_TARGET_OPENCL_VERSION is not defined. Defaulting to 300 (OpenCL 3.0) [-W#pragma-messages]
+#pragma message("cl_version.h: CL_TARGET_OPENCL_VERSION is not defined. Defaulting to 300 (OpenCL 3.0)")
+        ^
+$VENTUS_DIR/v3/v3_host.cc:86:28: warning: 'clCreateCommandQueue' is deprecated [-Wdeprecated-declarations]
+  cl_command_queue queue = clCreateCommandQueue(context, device_id, 0, &err);
+                           ^
+$VENTUS_DIR/toolchain/install/include/CL/cl.h:1923:66: note: 'clCreateCommandQueue' has been explicitly marked deprecated here
+                     cl_int *                       errcode_ret) CL_API_SUFFIX__VERSION_1_2_DEPRECATED;
+                                                                 ^
+$VENTUS_DIR/toolchain/install/include/CL/cl_platform.h:108:72: note: expanded from macro 'CL_API_SUFFIX__VERSION_1_2_DEPRECATED'
+    #define CL_API_SUFFIX__VERSION_1_2_DEPRECATED CL_API_SUFFIX_COMMON CL_API_SUFFIX_DEPRECATED
+                                                                       ^
+$VENTUS_DIR/toolchain/install/include/CL/cl_platform.h:78:51: note: expanded from macro 'CL_API_SUFFIX_DEPRECATED'
+  #define CL_API_SUFFIX_DEPRECATED __attribute__((deprecated))
+                                                  ^
+2 warnings generated.
+== 4. spike simulation + per-layer NumPy check ==
+v3_host: 13 kernels in chain
+[INFO]: [HW DRIVER] in [FILE] ventus.cpp,[LINE]25,[fn] vt_dev_open: vt_dev_open : hello world from ventus.cpp
+### Triple: riscv32, CPU: ventus-gpgpu
+load input <- $VENTUS_DIR/v3/data/input.bin (1024 floats)
+load kc1 <- $VENTUS_DIR/v3/data/kc1.bin (150 floats)
+load bc1 <- $VENTUS_DIR/v3/data/bc1.bin (6 floats)
+alloc c1 (4704 floats, intermediate)
+alloc r1 (4704 floats, intermediate)
+alloc p1 (1176 floats, intermediate)
+load kc2 <- $VENTUS_DIR/v3/data/kc2.bin (2400 floats)
+load bc2 <- $VENTUS_DIR/v3/data/bc2.bin (16 floats)
+alloc c2 (1600 floats, intermediate)
+alloc r2 (1600 floats, intermediate)
+alloc p2 (400 floats, intermediate)
+alloc flat (400 floats, intermediate)
+load fc1_w <- $VENTUS_DIR/v3/data/fc1_w.bin (48000 floats)
+load fc1_b <- $VENTUS_DIR/v3/data/fc1_b.bin (120 floats)
+alloc fc1o (120 floats, intermediate)
+alloc fc1r (120 floats, intermediate)
+load fc2_w <- $VENTUS_DIR/v3/data/fc2_w.bin (10080 floats)
+load fc2_b <- $VENTUS_DIR/v3/data/fc2_b.bin (84 floats)
+alloc fc2o (84 floats, intermediate)
+alloc fc2r (84 floats, intermediate)
+load fc3_w <- $VENTUS_DIR/v3/data/fc3_w.bin (840 floats)
+load fc3_b <- $VENTUS_DIR/v3/data/fc3_b.bin (10 floats)
+alloc fc3o (10 floats, intermediate)
+alloc output (10 floats, intermediate)
+ran conv1    gws=192 lws=32
+ran relu1    gws=4704 lws=32
+ran pool1    gws=192 lws=32
+ran conv2    gws=512 lws=32
+ran relu2    gws=1600 lws=32
+ran pool2    gws=512 lws=32
+ran flatten  gws=416 lws=32
+ran fc1      gws=3840 lws=32
+ran relu3    gws=128 lws=32
+ran fc2      gws=2688 lws=32
+ran relu4    gws=96 lws=32
+ran fc3      gws=320 lws=32
+ran softmax  gws=32 lws=32
+v3_host: chain done
+
+chain wall time: 105.43s
+[conv1   ] PASS n= 4704 max_abs_diff=1.164e-10
+[relu1   ] PASS n= 4704 max_abs_diff=1.164e-10
+[pool1   ] PASS n= 1176 max_abs_diff=1.164e-10
+[conv2   ] PASS n= 1600 max_abs_diff=2.328e-10
+[relu2   ] PASS n= 1600 max_abs_diff=1.164e-10
+[pool2   ] PASS n=  400 max_abs_diff=1.164e-10
+[flatten ] PASS n=  400 max_abs_diff=1.164e-10
+[fc1     ] PASS n=  120 max_abs_diff=1.164e-10
+[relu3   ] PASS n=  120 max_abs_diff=1.164e-10
+[fc2     ] PASS n=   84 max_abs_diff=5.821e-11
+[relu4   ] PASS n=   84 max_abs_diff=2.910e-11
+[fc3     ] PASS n=   10 max_abs_diff=0.000e+00
+[softmax ] PASS n=   10 max_abs_diff=7.451e-09
+V3 LeNet-5: 13/13 layers PASS; final softmax max_abs_diff=7.451e-09 (threshold 1e-5)

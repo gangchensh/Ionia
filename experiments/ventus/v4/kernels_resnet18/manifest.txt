@@ -1,0 +1,69 @@
+s_conv 512 32 in:input:4800 in:sc1_w:2352 in:sc1_b:16 out:s_c1o:6400
+s_bn 6400 32 in:s_c1o:6400 in:s_bnm:16 in:s_bnv:16 in:s_bng:16 in:s_bnb:16 out:s_bn1o:6400
+s_relu 6400 32 in:s_bn1o:6400 out:s_r1o:6400
+s_pool 512 32 in:s_r1o:6400 out:spool:1600
+l1b1_c1 512 32 in:spool:1600 in:l1b1_w1:2304 in:l1b1_b1:16 out:l1b1_c1o:1600
+l1b1_bn1 1600 32 in:l1b1_c1o:1600 in:l1b1_bn1m:16 in:l1b1_bn1v:16 in:l1b1_bn1g:16 in:l1b1_bn1b:16 out:l1b1_bn1o:1600
+l1b1_r1 1600 32 in:l1b1_bn1o:1600 out:l1b1_r1o:1600
+l1b1_c2 512 32 in:l1b1_r1o:1600 in:l1b1_w2:2304 in:l1b1_b2:16 out:l1b1_c2o:1600
+l1b1_bn2 1600 32 in:l1b1_c2o:1600 in:l1b1_bn2m:16 in:l1b1_bn2v:16 in:l1b1_bn2g:16 in:l1b1_bn2b:16 out:l1b1_bn2o:1600
+l1b1_add 1600 32 in:l1b1_bn2o:1600 in:spool:1600 out:l1b1_addo:1600
+l1b1_r2 1600 32 in:l1b1_addo:1600 out:l1b1_r2o:1600
+l1b2_c1 512 32 in:l1b1_r2o:1600 in:l1b2_w1:2304 in:l1b2_b1:16 out:l1b2_c1o:1600
+l1b2_bn1 1600 32 in:l1b2_c1o:1600 in:l1b2_bn1m:16 in:l1b2_bn1v:16 in:l1b2_bn1g:16 in:l1b2_bn1b:16 out:l1b2_bn1o:1600
+l1b2_r1 1600 32 in:l1b2_bn1o:1600 out:l1b2_r1o:1600
+l1b2_c2 512 32 in:l1b2_r1o:1600 in:l1b2_w2:2304 in:l1b2_b2:16 out:l1b2_c2o:1600
+l1b2_bn2 1600 32 in:l1b2_c2o:1600 in:l1b2_bn2m:16 in:l1b2_bn2v:16 in:l1b2_bn2g:16 in:l1b2_bn2b:16 out:l1b2_bn2o:1600
+l1b2_add 1600 32 in:l1b2_bn2o:1600 in:l1b1_r2o:1600 out:l1b2_addo:1600
+l1b2_r2 1600 32 in:l1b2_addo:1600 out:l1b2_r2o:1600
+l2b1_c1 1024 32 in:l1b2_r2o:1600 in:l2b1_w1:4608 in:l2b1_b1:32 out:l2b1_c1o:800
+l2b1_bn1 800 32 in:l2b1_c1o:800 in:l2b1_bn1m:32 in:l2b1_bn1v:32 in:l2b1_bn1g:32 in:l2b1_bn1b:32 out:l2b1_bn1o:800
+l2b1_r1 800 32 in:l2b1_bn1o:800 out:l2b1_r1o:800
+l2b1_c2 1024 32 in:l2b1_r1o:800 in:l2b1_w2:9216 in:l2b1_b2:32 out:l2b1_c2o:800
+l2b1_bn2 800 32 in:l2b1_c2o:800 in:l2b1_bn2m:32 in:l2b1_bn2v:32 in:l2b1_bn2g:32 in:l2b1_bn2b:32 out:l2b1_bn2o:800
+l2b1_sc 1024 32 in:l1b2_r2o:1600 in:l2b1_scw:512 in:l2b1_scb:32 out:l2b1_sco:800
+l2b1_sbn 800 32 in:l2b1_sco:800 in:l2b1_sbnm:32 in:l2b1_sbnv:32 in:l2b1_sbng:32 in:l2b1_sbnb:32 out:l2b1_sbno:800
+l2b1_add 800 32 in:l2b1_bn2o:800 in:l2b1_sbno:800 out:l2b1_addo:800
+l2b1_r2 800 32 in:l2b1_addo:800 out:l2b1_r2o:800
+l2b2_c1 1024 32 in:l2b1_r2o:800 in:l2b2_w1:9216 in:l2b2_b1:32 out:l2b2_c1o:800
+l2b2_bn1 800 32 in:l2b2_c1o:800 in:l2b2_bn1m:32 in:l2b2_bn1v:32 in:l2b2_bn1g:32 in:l2b2_bn1b:32 out:l2b2_bn1o:800
+l2b2_r1 800 32 in:l2b2_bn1o:800 out:l2b2_r1o:800
+l2b2_c2 1024 32 in:l2b2_r1o:800 in:l2b2_w2:9216 in:l2b2_b2:32 out:l2b2_c2o:800
+l2b2_bn2 800 32 in:l2b2_c2o:800 in:l2b2_bn2m:32 in:l2b2_bn2v:32 in:l2b2_bn2g:32 in:l2b2_bn2b:32 out:l2b2_bn2o:800
+l2b2_add 800 32 in:l2b2_bn2o:800 in:l2b1_r2o:800 out:l2b2_addo:800
+l2b2_r2 800 32 in:l2b2_addo:800 out:l2b2_r2o:800
+l3b1_c1 2048 32 in:l2b2_r2o:800 in:l3b1_w1:18432 in:l3b1_b1:64 out:l3b1_c1o:576
+l3b1_bn1 576 32 in:l3b1_c1o:576 in:l3b1_bn1m:64 in:l3b1_bn1v:64 in:l3b1_bn1g:64 in:l3b1_bn1b:64 out:l3b1_bn1o:576
+l3b1_r1 576 32 in:l3b1_bn1o:576 out:l3b1_r1o:576
+l3b1_c2 2048 32 in:l3b1_r1o:576 in:l3b1_w2:36864 in:l3b1_b2:64 out:l3b1_c2o:576
+l3b1_bn2 576 32 in:l3b1_c2o:576 in:l3b1_bn2m:64 in:l3b1_bn2v:64 in:l3b1_bn2g:64 in:l3b1_bn2b:64 out:l3b1_bn2o:576
+l3b1_sc 2048 32 in:l2b2_r2o:800 in:l3b1_scw:2048 in:l3b1_scb:64 out:l3b1_sco:576
+l3b1_sbn 576 32 in:l3b1_sco:576 in:l3b1_sbnm:64 in:l3b1_sbnv:64 in:l3b1_sbng:64 in:l3b1_sbnb:64 out:l3b1_sbno:576
+l3b1_add 576 32 in:l3b1_bn2o:576 in:l3b1_sbno:576 out:l3b1_addo:576
+l3b1_r2 576 32 in:l3b1_addo:576 out:l3b1_r2o:576
+l3b2_c1 2048 32 in:l3b1_r2o:576 in:l3b2_w1:36864 in:l3b2_b1:64 out:l3b2_c1o:576
+l3b2_bn1 576 32 in:l3b2_c1o:576 in:l3b2_bn1m:64 in:l3b2_bn1v:64 in:l3b2_bn1g:64 in:l3b2_bn1b:64 out:l3b2_bn1o:576
+l3b2_r1 576 32 in:l3b2_bn1o:576 out:l3b2_r1o:576
+l3b2_c2 2048 32 in:l3b2_r1o:576 in:l3b2_w2:36864 in:l3b2_b2:64 out:l3b2_c2o:576
+l3b2_bn2 576 32 in:l3b2_c2o:576 in:l3b2_bn2m:64 in:l3b2_bn2v:64 in:l3b2_bn2g:64 in:l3b2_bn2b:64 out:l3b2_bn2o:576
+l3b2_add 576 32 in:l3b2_bn2o:576 in:l3b1_r2o:576 out:l3b2_addo:576
+l3b2_r2 576 32 in:l3b2_addo:576 out:l3b2_r2o:576
+l4b1_c1 4096 32 in:l3b2_r2o:576 in:l4b1_w1:73728 in:l4b1_b1:128 out:l4b1_c1o:512
+l4b1_bn1 512 32 in:l4b1_c1o:512 in:l4b1_bn1m:128 in:l4b1_bn1v:128 in:l4b1_bn1g:128 in:l4b1_bn1b:128 out:l4b1_bn1o:512
+l4b1_r1 512 32 in:l4b1_bn1o:512 out:l4b1_r1o:512
+l4b1_c2 4096 32 in:l4b1_r1o:512 in:l4b1_w2:147456 in:l4b1_b2:128 out:l4b1_c2o:512
+l4b1_bn2 512 32 in:l4b1_c2o:512 in:l4b1_bn2m:128 in:l4b1_bn2v:128 in:l4b1_bn2g:128 in:l4b1_bn2b:128 out:l4b1_bn2o:512
+l4b1_sc 4096 32 in:l3b2_r2o:576 in:l4b1_scw:8192 in:l4b1_scb:128 out:l4b1_sco:512
+l4b1_sbn 512 32 in:l4b1_sco:512 in:l4b1_sbnm:128 in:l4b1_sbnv:128 in:l4b1_sbng:128 in:l4b1_sbnb:128 out:l4b1_sbno:512
+l4b1_add 512 32 in:l4b1_bn2o:512 in:l4b1_sbno:512 out:l4b1_addo:512
+l4b1_r2 512 32 in:l4b1_addo:512 out:l4b1_r2o:512
+l4b2_c1 4096 32 in:l4b1_r2o:512 in:l4b2_w1:147456 in:l4b2_b1:128 out:l4b2_c1o:512
+l4b2_bn1 512 32 in:l4b2_c1o:512 in:l4b2_bn1m:128 in:l4b2_bn1v:128 in:l4b2_bn1g:128 in:l4b2_bn1b:128 out:l4b2_bn1o:512
+l4b2_r1 512 32 in:l4b2_bn1o:512 out:l4b2_r1o:512
+l4b2_c2 4096 32 in:l4b2_r1o:512 in:l4b2_w2:147456 in:l4b2_b2:128 out:l4b2_c2o:512
+l4b2_bn2 512 32 in:l4b2_c2o:512 in:l4b2_bn2m:128 in:l4b2_bn2v:128 in:l4b2_bn2g:128 in:l4b2_bn2b:128 out:l4b2_bn2o:512
+l4b2_add 512 32 in:l4b2_bn2o:512 in:l4b1_r2o:512 out:l4b2_addo:512
+l4b2_r2 512 32 in:l4b2_addo:512 out:l4b2_r2o:512
+gap 128 32 in:l4b2_r2o:512 out:gapo:128
+fc 8192 32 in:gapo:128 in:fc_w:32768 in:fc_b:256 out:fco:256
+softmax 32 32 in:fco:256 out:output:256

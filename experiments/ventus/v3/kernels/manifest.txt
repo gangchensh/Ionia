@@ -1,0 +1,13 @@
+conv1 192 32 in:input:1024 in:kc1:150 in:bc1:6 out:c1:4704
+relu1 4704 32 in:c1:4704 out:r1:4704
+pool1 192 32 in:r1:4704 out:p1:1176
+conv2 512 32 in:p1:1176 in:kc2:2400 in:bc2:16 out:c2:1600
+relu2 1600 32 in:c2:1600 out:r2:1600
+pool2 512 32 in:r2:1600 out:p2:400
+flatten 416 32 in:p2:400 out:flat:400
+fc1 3840 32 in:flat:400 in:fc1_w:48000 in:fc1_b:120 out:fc1o:120
+relu3 128 32 in:fc1o:120 out:fc1r:120
+fc2 2688 32 in:fc1r:120 in:fc2_w:10080 in:fc2_b:84 out:fc2o:84
+relu4 96 32 in:fc2o:84 out:fc2r:84
+fc3 320 32 in:fc2r:84 in:fc3_w:840 in:fc3_b:10 out:fc3o:10
+softmax 32 32 in:fc3o:10 out:output:10

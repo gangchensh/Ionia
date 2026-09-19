@@ -1,0 +1,23 @@
+e2e resnet18 tf32=True: {'min': 1.1110719442367554, 'median': 1.2832319736480713}
+e2e resnet18 tf32=False: {'min': 2.3907840251922607, 'median': 2.5452160835266113}
+e2e vgg16 tf32=True: {'min': 2.4443519115448, 'median': 2.581631898880005}
+e2e vgg16 tf32=False: {'min': 5.911136150360107, 'median': 7.0386881828308105}
+conv res18_stem_7x7_s2_112 tf32=True: min=42.9us tf=5.50
+conv res18_stem_7x7_s2_112 tf32=False: min=37.7us tf=6.26
+conv res18_l1_64_56 tf32=True: min=29.8us tf=7.76
+conv res18_l1_64_56 tf32=False: min=36.3us tf=6.37
+conv res18_l2_128_28 tf32=True: min=26.0us tf=8.88
+conv res18_l2_128_28 tf32=False: min=48.4us tf=4.77
+conv res18_l2down_64_128_s2 tf32=True: min=22.6us tf=5.12
+conv res18_l2down_64_128_s2 tf32=False: min=32.4us tf=3.57
+conv res18_l3_256_14 tf32=True: min=37.4us tf=6.19
+conv res18_l3_256_14 tf32=False: min=86.5us tf=2.67
+conv res18_l4_512_7 tf32=True: min=65.2us tf=3.55
+conv res18_l4_512_7 tf32=False: min=161.6us tf=1.43
+conv vgg_conv3_3_256_56 tf32=True: min=92.1us tf=40.17
+conv vgg_conv3_3_256_56 tf32=False: min=276.1us tf=13.40
+conv vgg_conv5_512_14 tf32=True: min=82.2us tf=11.25
+conv vgg_conv5_512_14 tf32=False: min=195.4us tf=4.73
+stages tf32=True: {'stem': {'min_ms': 0.05673599988222122, 'median_ms': 0.12294399738311768}, 'layer1': {'min_ms': 0.16236799955368042, 'median_ms': 0.29468798637390137}, 'layer2': {'min_ms': 0.20396800339221954, 'median_ms': 0.3086400032043457}, 'layer3': {'min_ms': 0.2061759978532791, 'median_ms': 0.30300799012184143}, 'layer4': {'min_ms': 0.3346239924430847, 'median_ms': 0.3601920008659363}, 'gap_fc': {'min_ms': 0.021056000143289566, 'median_ms': 0.024000000208616257}}
+stages tf32=False: {'stem': {'min_ms': 0.05478399991989136, 'median_ms': 0.16860799491405487}, 'layer1': {'min_ms': 0.21532799303531647, 'median_ms': 0.2524479925632477}, 'layer2': {'min_ms': 0.33228799700737, 'median_ms': 0.34508800506591797}, 'layer3': {'min_ms': 0.5865920186042786, 'median_ms': 0.6067839860916138}, 'layer4': {'min_ms': 1.1120959520339966, 'median_ms': 1.199455976486206}, 'gap_fc': {'min_ms': 0.021183999255299568, 'median_ms': 0.02473600022494793}}
+WROTE experiments/ast_codegen/tf32_gap_results.json
